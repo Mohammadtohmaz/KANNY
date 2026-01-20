@@ -7,27 +7,27 @@ interface PoolCardProps {
 
 export default function PoolCard({ pool }: PoolCardProps) {
   return (
-    <div className="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden hover:shadow-xl transition-shadow">
-      <div className="p-6">
-        <span className="inline-block px-3 py-1 text-xs font-medium bg-emerald-100 text-emerald-700 rounded-full mb-3">
+    <div className="gradient-border card-hover overflow-hidden">
+      <div className="p-6 bg-[#0a0a14] rounded-[calc(1rem-1px)]">
+        <span className="inline-block px-3 py-1 text-xs font-medium bg-[#802ddf]/20 text-[#9945ff] rounded-full mb-3 border border-[#802ddf]/30">
           {pool.category}
         </span>
-        <h3 className="text-lg font-semibold text-gray-900 mb-2">{pool.title}</h3>
+        <h3 className="text-lg font-semibold text-white mb-2">{pool.title}</h3>
         <p className="text-sm text-gray-500 mb-4">{pool.description}</p>
 
         {/* Progress bars */}
         <div className="space-y-2 mb-4">
           <div className="flex justify-between text-sm">
-            <span className="text-emerald-600 font-medium">Yes {pool.yesPercentage}%</span>
-            <span className="text-red-500 font-medium">No {pool.noPercentage}%</span>
+            <span className="text-[#00d48a] font-medium">Yes {pool.yesPercentage}%</span>
+            <span className="text-[#802ddf] font-medium">No {pool.noPercentage}%</span>
           </div>
-          <div className="h-2 bg-gray-200 rounded-full overflow-hidden flex">
+          <div className="h-2 bg-[#1a1a2e] rounded-full overflow-hidden flex">
             <div
-              className="bg-emerald-500 h-full"
+              className="bg-gradient-to-r from-[#00d48a] to-[#00ff9d] h-full transition-all duration-500"
               style={{ width: `${pool.yesPercentage}%` }}
             />
             <div
-              className="bg-red-400 h-full"
+              className="bg-gradient-to-r from-[#802ddf] to-[#9945ff] h-full transition-all duration-500"
               style={{ width: `${pool.noPercentage}%` }}
             />
           </div>
@@ -47,11 +47,11 @@ export default function PoolCard({ pool }: PoolCardProps) {
       </div>
 
       {/* Action buttons */}
-      <div className="grid grid-cols-2 border-t border-gray-100">
-        <button className="py-3 text-center font-medium text-emerald-600 hover:bg-emerald-50 transition-colors">
+      <div className="grid grid-cols-2 border-t border-white/5">
+        <button className="py-3 text-center font-medium text-[#00d48a] hover:bg-[#00d48a]/10 transition-all duration-200 bg-[#0a0a14]">
           Yes
         </button>
-        <button className="py-3 text-center font-medium text-red-500 hover:bg-red-50 transition-colors border-l border-gray-100">
+        <button className="py-3 text-center font-medium text-[#802ddf] hover:bg-[#802ddf]/10 transition-all duration-200 border-l border-white/5 bg-[#0a0a14]">
           No
         </button>
       </div>

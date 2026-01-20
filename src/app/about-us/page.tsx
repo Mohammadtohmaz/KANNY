@@ -3,12 +3,14 @@ import { Target, Users, Globe } from 'lucide-react';
 
 export default function AboutUs() {
   return (
-    <div className="py-16">
+    <div className="py-16 bg-[#01010b]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Hero */}
         <div className="text-center mb-16">
-          <h1 className="text-4xl font-bold mb-4">About Oddsi</h1>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">
+            About <span className="text-gradient">Oddsi</span>
+          </h1>
+          <p className="text-xl text-gray-400 max-w-2xl mx-auto">
             Revolutionizing the way people trade through transparent, fair, and engaging
             event-driven markets.
           </p>
@@ -16,7 +18,7 @@ export default function AboutUs() {
 
         {/* Mission & Vision */}
         <div className="grid md:grid-cols-2 gap-8 mb-16">
-          <div className="bg-emerald-50 rounded-xl overflow-hidden">
+          <div className="gradient-border overflow-hidden">
             <div className="relative h-48">
               <Image
                 src="/images/about/mission.jpg"
@@ -24,17 +26,18 @@ export default function AboutUs() {
                 fill
                 className="object-cover"
               />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a14] to-transparent" />
             </div>
-            <div className="p-8">
-              <h2 className="text-2xl font-bold mb-4 text-emerald-700">Our Mission</h2>
-              <p className="text-gray-700">
+            <div className="p-8 bg-[#0a0a14]">
+              <h2 className="text-2xl font-bold mb-4 text-[#00d48a]">Our Mission</h2>
+              <p className="text-gray-400">
                 To create a transparent, fair, and engaging platform that bridges traditional
                 finance and modern user expectations. We empower traders through gamification
                 while rewarding knowledge and strategy over leverage manipulation.
               </p>
             </div>
           </div>
-          <div className="bg-slate-50 rounded-xl overflow-hidden">
+          <div className="gradient-border overflow-hidden">
             <div className="relative h-48">
               <Image
                 src="/images/about/vision.jpg"
@@ -42,10 +45,11 @@ export default function AboutUs() {
                 fill
                 className="object-cover"
               />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a14] to-transparent" />
             </div>
-            <div className="p-8">
-              <h2 className="text-2xl font-bold mb-4 text-slate-700">Our Vision</h2>
-              <p className="text-gray-700">
+            <div className="p-8 bg-[#0a0a14]">
+              <h2 className="text-2xl font-bold mb-4 text-[#9945ff]">Our Vision</h2>
+              <p className="text-gray-400">
                 To become the world&apos;s leading platform for event-driven trading, making
                 market participation accessible and intuitive for all experience levels
                 while promoting transparency and fairness.
@@ -56,32 +60,32 @@ export default function AboutUs() {
 
         {/* Values */}
         <div className="mb-16">
-          <h2 className="text-3xl font-bold text-center mb-8">Our Values</h2>
+          <h2 className="text-3xl font-bold text-center mb-8 text-white">Our Values</h2>
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Target className="text-emerald-600" size={32} />
+            <div className="text-center gradient-border card-hover p-8">
+              <div className="w-16 h-16 bg-gradient-to-br from-[#802ddf]/20 to-[#00d48a]/20 rounded-full flex items-center justify-center mx-auto mb-4 border border-[#802ddf]/30">
+                <Target className="text-[#00d48a]" size={32} />
               </div>
-              <h3 className="text-xl font-semibold mb-2">Transparency</h3>
-              <p className="text-gray-600">
+              <h3 className="text-xl font-semibold mb-2 text-white">Transparency</h3>
+              <p className="text-gray-500">
                 Every pool, every payout, every outcome is visible and verifiable.
               </p>
             </div>
-            <div className="text-center">
-              <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Users className="text-emerald-600" size={32} />
+            <div className="text-center gradient-border card-hover p-8">
+              <div className="w-16 h-16 bg-gradient-to-br from-[#802ddf]/20 to-[#00d48a]/20 rounded-full flex items-center justify-center mx-auto mb-4 border border-[#802ddf]/30">
+                <Users className="text-[#9945ff]" size={32} />
               </div>
-              <h3 className="text-xl font-semibold mb-2">Fairness</h3>
-              <p className="text-gray-600">
+              <h3 className="text-xl font-semibold mb-2 text-white">Fairness</h3>
+              <p className="text-gray-500">
                 We never trade against our users. Your success is our success.
               </p>
             </div>
-            <div className="text-center">
-              <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Globe className="text-emerald-600" size={32} />
+            <div className="text-center gradient-border card-hover p-8">
+              <div className="w-16 h-16 bg-gradient-to-br from-[#802ddf]/20 to-[#00d48a]/20 rounded-full flex items-center justify-center mx-auto mb-4 border border-[#802ddf]/30">
+                <Globe className="text-[#00d48a]" size={32} />
               </div>
-              <h3 className="text-xl font-semibold mb-2">Accessibility</h3>
-              <p className="text-gray-600">
+              <h3 className="text-xl font-semibold mb-2 text-white">Accessibility</h3>
+              <p className="text-gray-500">
                 Trading made simple. Start with as little as $1.
               </p>
             </div>
@@ -89,7 +93,7 @@ export default function AboutUs() {
         </div>
 
         {/* Team */}
-        <div className="bg-gray-50 rounded-xl overflow-hidden">
+        <div className="gradient-border overflow-hidden">
           <div className="relative h-64">
             <Image
               src="/images/about/team.jpg"
@@ -97,11 +101,11 @@ export default function AboutUs() {
               fill
               className="object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-gray-50 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a14] via-[#0a0a14]/50 to-transparent" />
           </div>
-          <div className="p-8 -mt-16 relative">
-            <h2 className="text-3xl font-bold text-center mb-4">Our Team</h2>
-            <p className="text-center text-gray-600 max-w-2xl mx-auto">
+          <div className="p-8 -mt-20 relative bg-[#0a0a14]">
+            <h2 className="text-3xl font-bold text-center mb-4 text-white">Our Team</h2>
+            <p className="text-center text-gray-400 max-w-2xl mx-auto">
               The founding team comprises traders, risk managers, and fintech innovators
               with decades of combined experience in forex trading, derivatives, risk
               management, quantitative analysis, and platform design. We&apos;ve previously

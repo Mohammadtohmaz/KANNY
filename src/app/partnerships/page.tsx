@@ -26,12 +26,14 @@ const benefits = [
 
 export default function Partnerships() {
   return (
-    <div className="py-16">
+    <div className="py-16 bg-[#01010b] min-h-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Hero */}
         <div className="text-center mb-16">
-          <h1 className="text-4xl font-bold mb-4">Partner With Oddsi</h1>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">
+            Partner With <span className="text-gradient">Oddsi</span>
+          </h1>
+          <p className="text-xl text-gray-400 max-w-2xl mx-auto">
             Join one of the most rewarding affiliate programs in the trading space.
             Earn recurring commissions by referring traders.
           </p>
@@ -40,64 +42,68 @@ export default function Partnerships() {
         {/* Benefits */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           {benefits.map((benefit, index) => (
-            <div key={index} className="bg-white rounded-xl shadow-lg p-6 text-center">
-              <div className="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <benefit.icon className="text-emerald-600" size={24} />
+            <div key={index} className="gradient-border card-hover p-6 text-center">
+              <div className="bg-[#0a0a14] rounded-[calc(1rem-1px)]">
+                <div className="w-14 h-14 bg-gradient-to-br from-[#802ddf]/20 to-[#00d48a]/20 rounded-xl flex items-center justify-center mx-auto mb-4 border border-[#802ddf]/30">
+                  <benefit.icon className="text-[#00d48a]" size={28} />
+                </div>
+                <h3 className="text-lg font-semibold mb-2 text-white">{benefit.title}</h3>
+                <p className="text-gray-500 text-sm">{benefit.description}</p>
               </div>
-              <h3 className="text-lg font-semibold mb-2">{benefit.title}</h3>
-              <p className="text-gray-600 text-sm">{benefit.description}</p>
             </div>
           ))}
         </div>
 
         {/* Calculator */}
-        <div className="bg-slate-900 text-white rounded-xl p-8 mb-16">
-          <h2 className="text-2xl font-bold mb-6 text-center">Earnings Example</h2>
-          <div className="grid md:grid-cols-3 gap-8 text-center">
-            <div>
-              <div className="text-4xl font-bold text-emerald-400">100</div>
-              <p className="text-gray-400 mt-2">Referred Users</p>
-            </div>
-            <div>
-              <div className="text-4xl font-bold text-emerald-400">$50</div>
-              <p className="text-gray-400 mt-2">Avg. Monthly Revenue Each</p>
-            </div>
-            <div>
-              <div className="text-4xl font-bold text-emerald-400">$1,500</div>
-              <p className="text-gray-400 mt-2">Your Monthly Commission</p>
+        <div className="gradient-border overflow-hidden mb-16">
+          <div className="p-8 bg-[#0a0a14]">
+            <h2 className="text-2xl font-bold mb-8 text-center text-white">Earnings Example</h2>
+            <div className="grid md:grid-cols-3 gap-8 text-center">
+              <div>
+                <div className="text-5xl font-bold text-gradient">100</div>
+                <p className="text-gray-400 mt-2">Referred Users</p>
+              </div>
+              <div>
+                <div className="text-5xl font-bold text-gradient">$50</div>
+                <p className="text-gray-400 mt-2">Avg. Monthly Revenue Each</p>
+              </div>
+              <div>
+                <div className="text-5xl font-bold text-gradient">$1,500</div>
+                <p className="text-gray-400 mt-2">Your Monthly Commission</p>
+              </div>
             </div>
           </div>
         </div>
 
         {/* How It Works */}
         <div className="mb-16">
-          <h2 className="text-2xl font-bold text-center mb-8">How It Works</h2>
+          <h2 className="text-2xl font-bold text-center mb-8 text-white">How It Works</h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="w-10 h-10 bg-emerald-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold">
+              <div className="w-12 h-12 bg-gradient-to-r from-[#802ddf] to-[#00d48a] text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-lg glow-purple-green">
                 1
               </div>
-              <h3 className="font-semibold mb-2">Sign Up</h3>
-              <p className="text-gray-600">
+              <h3 className="font-semibold mb-2 text-white">Sign Up</h3>
+              <p className="text-gray-400">
                 Every Oddsi user automatically becomes an affiliate with a unique
                 referral link.
               </p>
             </div>
             <div className="text-center">
-              <div className="w-10 h-10 bg-emerald-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold">
+              <div className="w-12 h-12 bg-gradient-to-r from-[#802ddf] to-[#00d48a] text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-lg glow-purple-green">
                 2
               </div>
-              <h3 className="font-semibold mb-2">Share</h3>
-              <p className="text-gray-600">
+              <h3 className="font-semibold mb-2 text-white">Share</h3>
+              <p className="text-gray-400">
                 Share your link on social media, blogs, YouTube, or with your network.
               </p>
             </div>
             <div className="text-center">
-              <div className="w-10 h-10 bg-emerald-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold">
+              <div className="w-12 h-12 bg-gradient-to-r from-[#802ddf] to-[#00d48a] text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-lg glow-purple-green">
                 3
               </div>
-              <h3 className="font-semibold mb-2">Earn</h3>
-              <p className="text-gray-600">
+              <h3 className="font-semibold mb-2 text-white">Earn</h3>
+              <p className="text-gray-400">
                 Earn 30% commission on revenue from your referrals&apos; trading activity.
               </p>
             </div>
@@ -105,17 +111,19 @@ export default function Partnerships() {
         </div>
 
         {/* CTA */}
-        <div className="text-center bg-emerald-50 rounded-xl p-8">
-          <h2 className="text-2xl font-bold mb-4">Ready to Start Earning?</h2>
-          <p className="text-gray-600 mb-6">
-            Sign up today and get your unique referral link instantly.
-          </p>
-          <Link
-            href="/register"
-            className="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-3 rounded-lg font-semibold inline-block transition-colors"
-          >
-            Become a Partner
-          </Link>
+        <div className="text-center gradient-border p-10">
+          <div className="bg-[#0a0a14] rounded-[calc(1rem-1px)]">
+            <h2 className="text-2xl font-bold mb-4 text-white">Ready to Start Earning?</h2>
+            <p className="text-gray-400 mb-6">
+              Sign up today and get your unique referral link instantly.
+            </p>
+            <Link
+              href="/register"
+              className="bg-gradient-to-r from-[#802ddf] to-[#00d48a] hover:from-[#9945ff] hover:to-[#00ff9d] text-white px-8 py-3 rounded-lg font-semibold inline-block transition-all duration-300 btn-glow"
+            >
+              Become a Partner
+            </Link>
+          </div>
         </div>
       </div>
     </div>

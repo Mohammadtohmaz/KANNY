@@ -48,11 +48,13 @@ const plans = [
 
 export default function Plans() {
   return (
-    <div className="py-16">
+    <div className="py-16 bg-[#01010b] min-h-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold mb-4">Choose Your Plan</h1>
-          <p className="text-xl text-gray-600">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">
+            Choose Your <span className="text-gradient">Plan</span>
+          </h1>
+          <p className="text-xl text-gray-400">
             Flexible pricing designed to fit every trader&apos;s style.
           </p>
         </div>
@@ -61,46 +63,37 @@ export default function Plans() {
           {plans.map((plan) => (
             <div
               key={plan.name}
-              className={`rounded-xl p-8 ${
+              className={`rounded-xl overflow-hidden ${
                 plan.highlighted
-                  ? 'bg-emerald-600 text-white shadow-xl scale-105'
-                  : 'bg-white border border-gray-200 shadow-lg'
+                  ? 'bg-gradient-to-b from-[#802ddf] to-[#00d48a] p-[1px] scale-105'
+                  : 'gradient-border'
               }`}
             >
-              <h2 className="text-2xl font-bold mb-2">{plan.name}</h2>
-              <div className="text-3xl font-bold mb-2">{plan.price}</div>
-              <p
-                className={`mb-6 ${
-                  plan.highlighted ? 'text-emerald-100' : 'text-gray-600'
-                }`}
-              >
-                {plan.description}
-              </p>
+              <div className={`p-8 h-full ${plan.highlighted ? 'bg-[#0a0a14] rounded-xl' : 'bg-[#0a0a14]'}`}>
+                <h2 className="text-2xl font-bold mb-2 text-white">{plan.name}</h2>
+                <div className="text-4xl font-bold mb-2 text-gradient">{plan.price}</div>
+                <p className="text-gray-400 mb-6">{plan.description}</p>
 
-              <ul className="space-y-3 mb-8">
-                {plan.features.map((feature, index) => (
-                  <li key={index} className="flex items-start gap-2">
-                    <Check
-                      size={20}
-                      className={
-                        plan.highlighted ? 'text-emerald-200' : 'text-emerald-500'
-                      }
-                    />
-                    <span>{feature}</span>
-                  </li>
-                ))}
-              </ul>
+                <ul className="space-y-3 mb-8">
+                  {plan.features.map((feature, index) => (
+                    <li key={index} className="flex items-start gap-2">
+                      <Check size={20} className="text-[#00d48a] mt-0.5" />
+                      <span className="text-gray-300">{feature}</span>
+                    </li>
+                  ))}
+                </ul>
 
-              <Link
-                href="/register"
-                className={`block text-center py-3 rounded-lg font-semibold transition-colors ${
-                  plan.highlighted
-                    ? 'bg-white text-emerald-600 hover:bg-gray-100'
-                    : 'bg-emerald-600 text-white hover:bg-emerald-700'
-                }`}
-              >
-                {plan.cta}
-              </Link>
+                <Link
+                  href="/register"
+                  className={`block text-center py-3 rounded-lg font-semibold transition-all duration-300 ${
+                    plan.highlighted
+                      ? 'bg-gradient-to-r from-[#802ddf] to-[#00d48a] hover:from-[#9945ff] hover:to-[#00ff9d] text-white btn-glow'
+                      : 'border border-white/20 hover:border-[#00d48a]/50 text-white hover:bg-white/5'
+                  }`}
+                >
+                  {plan.cta}
+                </Link>
+              </div>
             </div>
           ))}
         </div>

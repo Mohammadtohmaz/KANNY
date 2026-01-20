@@ -1,18 +1,101 @@
 @import "tailwindcss";
 
 :root {
-  --foreground: #171717;
-  --background: #ffffff;
+  /* Oddsi Color Scheme */
+  --color-bg: #01010b;
+  --color-bg-secondary: #0a0a14;
+  --color-purple: #802ddf;
+  --color-purple-light: #9945ff;
+  --color-green: #00d48a;
+  --color-green-light: #00ff9d;
+  --foreground: #ededed;
+  --foreground-muted: #9ca3af;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground: #ededed;
-    --background: #0a0a0a;
-  }
+* {
+  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
 body {
   color: var(--foreground);
-  background: var(--background);
+  background: var(--color-bg);
+}
+
+/* Gradient Border Utility */
+.gradient-border {
+  position: relative;
+  background: var(--color-bg-secondary);
+  border-radius: 1rem;
+}
+
+.gradient-border::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  padding: 1px;
+  border-radius: 1rem;
+  background: linear-gradient(135deg, var(--color-purple), var(--color-green));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+/* Glow Effects */
+.glow-purple {
+  box-shadow: 0 0 20px rgba(128, 45, 223, 0.4), 0 0 40px rgba(128, 45, 223, 0.2);
+}
+
+.glow-green {
+  box-shadow: 0 0 20px rgba(0, 212, 138, 0.4), 0 0 40px rgba(0, 212, 138, 0.2);
+}
+
+.glow-purple-green {
+  box-shadow: 0 0 20px rgba(128, 45, 223, 0.3), 0 0 40px rgba(0, 212, 138, 0.2);
+}
+
+/* Button Hover Glow */
+.btn-glow:hover {
+  box-shadow: 0 0 25px rgba(0, 212, 138, 0.5), 0 0 50px rgba(0, 212, 138, 0.3);
+  transform: translateY(-2px);
+}
+
+/* Text Gradient */
+.text-gradient {
+  background: linear-gradient(135deg, var(--color-purple-light), var(--color-green));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Card Hover Effect */
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 40px rgba(128, 45, 223, 0.2), 0 0 20px rgba(0, 212, 138, 0.1);
+}
+
+/* Animated Gradient Background */
+@keyframes gradient-shift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+.animated-gradient {
+  background: linear-gradient(-45deg, #01010b, #1a0a2e, #0a1a1a, #01010b);
+  background-size: 400% 400%;
+  animation: gradient-shift 15s ease infinite;
+}
+
+/* Pulse Animation */
+@keyframes pulse-glow {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+.pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
 }

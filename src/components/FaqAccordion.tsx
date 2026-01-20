@@ -20,25 +20,29 @@ export default function FaqAccordion({ items }: FaqAccordionProps) {
       {items.map((item, index) => (
         <div
           key={index}
-          className="border border-gray-200 rounded-lg overflow-hidden"
+          className="gradient-border overflow-hidden"
         >
           <button
-            className="w-full px-6 py-4 text-left flex justify-between items-center bg-white hover:bg-gray-50 transition-colors"
+            className="w-full px-6 py-4 text-left flex justify-between items-center bg-[#0a0a14] hover:bg-[#0f0f1a] transition-colors"
             onClick={() => toggleItem(index)}
           >
-            <span className="font-medium text-gray-900">{item.question}</span>
+            <span className="font-medium text-white">{item.question}</span>
             <ChevronDown
               size={20}
-              className={`text-gray-500 transition-transform ${
+              className={`text-[#00d48a] transition-transform duration-300 ${
                 openIndex === index ? 'rotate-180' : ''
               }`}
             />
           </button>
-          {openIndex === index && (
-            <div className="px-6 py-4 bg-gray-50 border-t border-gray-200">
-              <p className="text-gray-600">{item.answer}</p>
+          <div
+            className={`overflow-hidden transition-all duration-300 ${
+              openIndex === index ? 'max-h-96' : 'max-h-0'
+            }`}
+          >
+            <div className="px-6 py-4 bg-[#0a0a14] border-t border-white/5">
+              <p className="text-gray-400">{item.answer}</p>
             </div>
-          )}
+          </div>
         </div>
       ))}
     </div>

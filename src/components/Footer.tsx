@@ -20,25 +20,25 @@ const footerLinks = {
 
 export default function Footer() {
   return (
-    <footer className="bg-slate-900 text-gray-300">
+    <footer className="bg-[#01010b] text-gray-400 border-t border-white/5">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div>
-            <Link href="/" className="text-2xl font-bold text-emerald-400">
+            <Link href="/" className="text-2xl font-bold text-gradient">
               Oddsi
             </Link>
-            <p className="mt-4 text-sm text-gray-400">
+            <p className="mt-4 text-sm text-gray-500">
               Event-driven trading platform. Small trades, unlimited gains.
             </p>
             <div className="flex space-x-4 mt-4">
-              <a href="#" className="hover:text-emerald-400 transition-colors">
+              <a href="#" className="hover:text-[#00d48a] transition-colors duration-200">
                 <Instagram size={20} />
               </a>
-              <a href="#" className="hover:text-emerald-400 transition-colors">
+              <a href="#" className="hover:text-[#00d48a] transition-colors duration-200">
                 <Linkedin size={20} />
               </a>
-              <a href="#" className="hover:text-emerald-400 transition-colors">
+              <a href="#" className="hover:text-[#00d48a] transition-colors duration-200">
                 <Facebook size={20} />
               </a>
             </div>
@@ -50,7 +50,7 @@ export default function Footer() {
             <ul className="space-y-2">
               {footerLinks.company.map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="hover:text-emerald-400 transition-colors text-sm">
+                  <Link href={link.href} className="hover:text-[#00d48a] transition-colors duration-200 text-sm">
                     {link.label}
                   </Link>
                 </li>
@@ -64,7 +64,7 @@ export default function Footer() {
             <ul className="space-y-2">
               {footerLinks.resources.map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="hover:text-emerald-400 transition-colors text-sm">
+                  <Link href={link.href} className="hover:text-[#00d48a] transition-colors duration-200 text-sm">
                     {link.label}
                   </Link>
                 </li>
@@ -78,7 +78,7 @@ export default function Footer() {
             <ul className="space-y-2">
               {footerLinks.legal.map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="hover:text-emerald-400 transition-colors text-sm">
+                  <Link href={link.href} className="hover:text-[#00d48a] transition-colors duration-200 text-sm">
                     {link.label}
                   </Link>
                 </li>
@@ -87,8 +87,8 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-slate-800 mt-8 pt-8">
-          <p className="text-sm text-gray-400 text-center">
+        <div className="border-t border-white/5 mt-8 pt-8">
+          <p className="text-sm text-gray-500 text-center">
             © 2025 Oddsi. All rights reserved. Trading involves significant risk.
             Not available in USA, Iran, North Korea, Syria, or Myanmar.
           </p>
