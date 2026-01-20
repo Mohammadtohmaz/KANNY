@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { ArrowRight, TrendingUp, Shield, Zap } from 'lucide-react';
 import PoolCard from '@/components/PoolCard';
 import { pools } from '@/data/pools';
@@ -7,8 +8,19 @@ export default function Home() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-emerald-900 text-white py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative text-white py-20 min-h-[600px] flex items-center overflow-hidden">
+        {/* Background Image */}
+        <Image
+          src="/images/hero/trading-hero.jpg"
+          alt="Trading background"
+          fill
+          className="object-cover z-0"
+          priority
+        />
+        {/* Dark Overlay */}
+        <div className="absolute inset-0 z-10 bg-gradient-to-br from-slate-900/95 via-slate-900/90 to-emerald-900/85" />
+
+        <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               Small Trades,{' '}
