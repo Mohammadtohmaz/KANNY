@@ -11,7 +11,7 @@ export default function Home() {
       <section className="relative text-white py-24 min-h-[700px] flex items-center overflow-hidden">
         {/* Background Image */}
         <Image
-          src="/images/hero/trading-hero.jpg"
+          src="/images/hero/trading-desk.jpg"
           alt="Trading charts background"
           fill
           className="object-cover z-0"

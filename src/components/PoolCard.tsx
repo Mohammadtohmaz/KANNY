@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { Clock, Users } from 'lucide-react';
 import { Pool } from '@/data/pools';
 
@@ -8,12 +9,23 @@ interface PoolCardProps {
 export default function PoolCard({ pool }: PoolCardProps) {
   return (
     <div className="gradient-border card-hover overflow-hidden">
-      <div className="p-6 bg-[#0a0a14] rounded-[calc(1rem-1px)]">
-        <span className="inline-block px-3 py-1 text-xs font-medium bg-[#802ddf]/20 text-[#9945ff] rounded-full mb-3 border border-[#802ddf]/30">
+      {/* Pool Image */}
+      <div className="relative h-40 overflow-hidden">
+        <Image
+          src={pool.image}
+          alt={pool.title}
+          fill
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a14] via-transparent to-transparent" />
+        <span className="absolute top-3 left-3 px-3 py-1 text-xs font-medium bg-[#802ddf]/80 text-white rounded-full backdrop-blur-sm">
           {pool.category}
         </span>
+      </div>
+
+      <div className="p-5 bg-[#0a0a14]">
         <h3 className="text-lg font-semibold text-white mb-2">{pool.title}</h3>
-        <p className="text-sm text-gray-500 mb-4">{pool.description}</p>
+        <p className="text-sm text-gray-500 mb-4 line-clamp-2">{pool.description}</p>
 
         {/* Progress bars */}
         <div className="space-y-2 mb-4">

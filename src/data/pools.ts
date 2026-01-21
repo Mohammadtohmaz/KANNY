@@ -7,6 +7,7 @@ export interface Pool {
   poolSize: string;
   deadline: string;
   category: string;
+  image: string;
 }
 
 export const pools: Pool[] = [
@@ -18,7 +19,8 @@ export const pools: Pool[] = [
     noPercentage: 38,
     poolSize: '$45,230',
     deadline: 'Aug 15, 2025',
-    category: 'Commodities'
+    category: 'Commodities',
+    image: '/images/pools/confident-trader.jpg'
   },
   {
     id: '2',
@@ -28,7 +30,8 @@ export const pools: Pool[] = [
     noPercentage: 55,
     poolSize: '$128,500',
     deadline: 'Sep 18, 2025',
-    category: 'Interest Rates'
+    category: 'Interest Rates',
+    image: '/images/pools/sleeping-trader.jpg'
   },
   {
     id: '3',
@@ -38,7 +41,8 @@ export const pools: Pool[] = [
     noPercentage: 49,
     poolSize: '$67,890',
     deadline: 'Sep 30, 2025',
-    category: 'Forex'
+    category: 'Forex',
+    image: '/images/pools/female-trader.jpg'
   },
   {
     id: '4',
@@ -48,7 +52,8 @@ export const pools: Pool[] = [
     noPercentage: 62,
     poolSize: '$234,100',
     deadline: 'Aug 13, 2025',
-    category: 'Economic Data'
+    category: 'Economic Data',
+    image: '/images/pools/stressed-trader.jpg'
   },
   {
     id: '5',
@@ -58,7 +63,8 @@ export const pools: Pool[] = [
     noPercentage: 28,
     poolSize: '$567,000',
     deadline: 'Dec 31, 2025',
-    category: 'Crypto'
+    category: 'Crypto',
+    image: '/images/pools/crypto-trader.jpg'
   },
   {
     id: '6',
@@ -68,6 +74,7 @@ export const pools: Pool[] = [
     noPercentage: 45,
     poolSize: '$89,340',
     deadline: 'Aug 2, 2025',
-    category: 'Economic Data'
+    category: 'Economic Data',
+    image: '/images/pools/happy-trader.jpg'
   }
 ];
