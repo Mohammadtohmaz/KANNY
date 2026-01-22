@@ -3,7 +3,7 @@ import { Target, Users, Globe } from 'lucide-react';
 
 export default function AboutUs() {
   return (
-    <div className="py-16 bg-[#0d1421]">
+    <div className="py-16 bg-[#0F142D]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Hero */}
         <div className="text-center mb-16">
@@ -29,7 +29,7 @@ export default function AboutUs() {
               <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a14] to-transparent" />
             </div>
             <div className="p-8 bg-[#141f3c]">
-              <h2 className="text-2xl font-bold mb-4 text-[#00d48a]">Our Mission</h2>
+              <h2 className="text-2xl font-bold mb-4 text-[#70FFEB]">Our Mission</h2>
               <p className="text-gray-400">
                 To create a transparent, fair, and engaging platform that bridges traditional
                 finance and modern user expectations. We empower bettors through gamification
@@ -48,7 +48,7 @@ export default function AboutUs() {
               <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a14] to-transparent" />
             </div>
             <div className="p-8 bg-[#141f3c]">
-              <h2 className="text-2xl font-bold mb-4 text-[#00d48a]">Our Vision</h2>
+              <h2 className="text-2xl font-bold mb-4 text-[#70FFEB]">Our Vision</h2>
               <p className="text-gray-400">
                 To become the world&apos;s leading platform for event-driven betting, making
                 market participation accessible and intuitive for all experience levels
@@ -63,8 +63,8 @@ export default function AboutUs() {
           <h2 className="text-3xl font-bold text-center mb-8 text-white">Our Values</h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center gradient-border card-hover p-8">
-              <div className="w-16 h-16 bg-gradient-to-br from-[#00d48a]/20 to-[#00d48a]/20 rounded-full flex items-center justify-center mx-auto mb-4 border border-[#00d48a]/30">
-                <Target className="text-[#00d48a]" size={32} />
+              <div className="w-16 h-16 bg-gradient-to-br from-[#70FFEB]/20 to-[#70FFEB]/20 rounded-full flex items-center justify-center mx-auto mb-4 border border-[#70FFEB]/30">
+                <Target className="text-[#70FFEB]" size={32} />
               </div>
               <h3 className="text-xl font-semibold mb-2 text-white">Transparency</h3>
               <p className="text-gray-500">
@@ -72,8 +72,8 @@ export default function AboutUs() {
               </p>
             </div>
             <div className="text-center gradient-border card-hover p-8">
-              <div className="w-16 h-16 bg-gradient-to-br from-[#00d48a]/20 to-[#00d48a]/20 rounded-full flex items-center justify-center mx-auto mb-4 border border-[#00d48a]/30">
-                <Users className="text-[#00d48a]" size={32} />
+              <div className="w-16 h-16 bg-gradient-to-br from-[#70FFEB]/20 to-[#70FFEB]/20 rounded-full flex items-center justify-center mx-auto mb-4 border border-[#70FFEB]/30">
+                <Users className="text-[#70FFEB]" size={32} />
               </div>
               <h3 className="text-xl font-semibold mb-2 text-white">Fairness</h3>
               <p className="text-gray-500">
@@ -81,8 +81,8 @@ export default function AboutUs() {
               </p>
             </div>
             <div className="text-center gradient-border card-hover p-8">
-              <div className="w-16 h-16 bg-gradient-to-br from-[#00d48a]/20 to-[#00d48a]/20 rounded-full flex items-center justify-center mx-auto mb-4 border border-[#00d48a]/30">
-                <Globe className="text-[#00d48a]" size={32} />
+              <div className="w-16 h-16 bg-gradient-to-br from-[#70FFEB]/20 to-[#70FFEB]/20 rounded-full flex items-center justify-center mx-auto mb-4 border border-[#70FFEB]/30">
+                <Globe className="text-[#70FFEB]" size={32} />
               </div>
               <h3 className="text-xl font-semibold mb-2 text-white">Accessibility</h3>
               <p className="text-gray-500">

@@ -6,7 +6,7 @@ import { pools } from '@/data/pools';
 
 export default function Home() {
   return (
-    <div className="bg-[#0d1421]">
+    <div className="bg-[#0F142D]">
       {/* Hero Section */}
       <section className="relative text-white py-24 min-h-[600px] flex items-center overflow-hidden">
         {/* Background Image */}
@@ -19,7 +19,7 @@ export default function Home() {
         />
 
         {/* Gradient Overlay */}
-        <div className="absolute inset-0 z-10 bg-gradient-to-br from-[#0d1421]/95 via-[#141f3c]/90 to-[#0d1421]/85" />
+        <div className="absolute inset-0 z-10 bg-gradient-to-br from-[#0F142D]/95 via-[#141f3c]/90 to-[#0F142D]/85" />
 
         <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="text-center">
@@ -34,13 +34,13 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/register"
-                className="bg-[#00d48a] hover:bg-[#00ff9d] text-black px-8 py-4 rounded-lg font-semibold flex items-center justify-center gap-2 transition-all duration-300 text-lg"
+                className="bg-[#70FFEB] hover:bg-[#9FFFF4] text-black px-8 py-4 rounded-lg font-semibold flex items-center justify-center gap-2 transition-all duration-300 text-lg"
               >
                 Get Started <ArrowRight size={22} />
               </Link>
               <Link
                 href="/about-us"
-                className="border border-white/20 hover:border-[#00d48a]/50 hover:bg-white/5 px-8 py-4 rounded-lg font-semibold transition-all duration-300 text-lg"
+                className="border border-white/20 hover:border-[#70FFEB]/50 hover:bg-white/5 px-8 py-4 rounded-lg font-semibold transition-all duration-300 text-lg"
               >
                 Learn More
               </Link>
@@ -66,7 +66,7 @@ export default function Home() {
               <div className="text-gray-400 text-sm">Fast Payouts</div>
             </div>
             <div className="flex items-center gap-2 text-gray-400 text-sm">
-              <Shield size={18} className="text-[#00d48a]" />
+              <Shield size={18} className="text-[#70FFEB]" />
               <span>Regulated & Secure</span>
             </div>
           </div>
@@ -74,7 +74,7 @@ export default function Home() {
       </section>
 
       {/* Features Section */}
-      <section className="py-20 bg-[#0d1421]">
+      <section className="py-20 bg-[#0F142D]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-white">
             Why Bet with <span className="text-gradient">ArrowBets</span>?
@@ -85,8 +85,8 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="gradient-border card-hover p-6">
               <div className="bg-[#141f3c] rounded-[calc(1rem-1px)] p-2">
-                <div className="w-14 h-14 bg-[#00d48a]/10 rounded-xl flex items-center justify-center mb-4 border border-[#00d48a]/30">
-                  <TrendingUp className="text-[#00d48a]" size={28} />
+                <div className="w-14 h-14 bg-[#70FFEB]/10 rounded-xl flex items-center justify-center mb-4 border border-[#70FFEB]/30">
+                  <TrendingUp className="text-[#70FFEB]" size={28} />
                 </div>
                 <h3 className="text-xl font-semibold mb-2 text-white">Transparent Pools</h3>
                 <p className="text-gray-500">
@@ -97,8 +97,8 @@ export default function Home() {
             </div>
             <div className="gradient-border card-hover p-6">
               <div className="bg-[#141f3c] rounded-[calc(1rem-1px)] p-2">
-                <div className="w-14 h-14 bg-[#00d48a]/10 rounded-xl flex items-center justify-center mb-4 border border-[#00d48a]/30">
-                  <Shield className="text-[#00d48a]" size={28} />
+                <div className="w-14 h-14 bg-[#70FFEB]/10 rounded-xl flex items-center justify-center mb-4 border border-[#70FFEB]/30">
+                  <Shield className="text-[#70FFEB]" size={28} />
                 </div>
                 <h3 className="text-xl font-semibold mb-2 text-white">Fair Trading</h3>
                 <p className="text-gray-500">
@@ -109,8 +109,8 @@ export default function Home() {
             </div>
             <div className="gradient-border card-hover p-6">
               <div className="bg-[#141f3c] rounded-[calc(1rem-1px)] p-2">
-                <div className="w-14 h-14 bg-[#00d48a]/10 rounded-xl flex items-center justify-center mb-4 border border-[#00d48a]/30">
-                  <Zap className="text-[#00d48a]" size={28} />
+                <div className="w-14 h-14 bg-[#70FFEB]/10 rounded-xl flex items-center justify-center mb-4 border border-[#70FFEB]/30">
+                  <Zap className="text-[#70FFEB]" size={28} />
                 </div>
                 <h3 className="text-xl font-semibold mb-2 text-white">Quick Results</h3>
                 <p className="text-gray-500">
@@ -124,23 +124,38 @@ export default function Home() {
       </section>
 
       {/* Active Pools Section */}
-      <section className="py-20 bg-[#0d1421]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center mb-10">
+      <section className="py-20 bg-[#0F142D] relative overflow-hidden">
+        {/* Subtle background pattern */}
+        <div className="absolute inset-0 opacity-5">
+          <div className="absolute inset-0" style={{
+            backgroundImage: 'radial-gradient(circle at 1px 1px, #70FFEB 1px, transparent 0)',
+            backgroundSize: '40px 40px'
+          }} />
+        </div>
+
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-12 gap-4">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-white">Active Pools</h2>
-              <p className="text-gray-500 mt-2">Bet on upcoming economic events</p>
+              <div className="flex items-center gap-3 mb-2">
+                <h2 className="text-3xl md:text-4xl font-bold text-white">Active Pools</h2>
+                <div className="flex items-center gap-1.5 px-3 py-1 bg-[#70FFEB]/10 border border-[#70FFEB]/30 rounded-full">
+                  <span className="w-2 h-2 bg-[#70FFEB] rounded-full live-indicator" />
+                  <span className="text-xs font-semibold text-[#70FFEB] uppercase tracking-wider">Live</span>
+                </div>
+              </div>
+              <p className="text-gray-400 mt-2">Bet on upcoming economic events • <span className="text-[#70FFEB]">{pools.length} active pools</span></p>
             </div>
             <Link
               href="/register"
-              className="text-[#00d48a] hover:text-[#00ff9d] font-medium flex items-center gap-1 transition-colors"
+              className="group flex items-center gap-2 px-5 py-2.5 bg-[#70FFEB]/10 hover:bg-[#70FFEB] text-[#70FFEB] hover:text-black border border-[#70FFEB]/30 hover:border-[#70FFEB] rounded-lg font-medium transition-all duration-300"
             >
-              View All <ArrowRight size={18} />
+              View All
+              <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
             </Link>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {pools.map((pool) => (
-              <PoolCard key={pool.id} pool={pool} />
+            {pools.map((pool, index) => (
+              <PoolCard key={pool.id} pool={pool} index={index} />
             ))}
           </div>
         </div>
@@ -148,8 +163,8 @@ export default function Home() {
 
       {/* CTA Section */}
       <section className="py-20 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-[#00d48a]/10 to-[#141f3c]/50" />
-        <div className="absolute inset-0 bg-[#0d1421]/80" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#70FFEB]/10 to-[#141f3c]/50" />
+        <div className="absolute inset-0 bg-[#0F142D]/80" />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
             Ready to Start <span className="text-gradient">Betting</span>?
@@ -160,7 +175,7 @@ export default function Home() {
           </p>
           <Link
             href="/register"
-            className="bg-[#00d48a] hover:bg-[#00ff9d] text-black px-10 py-4 rounded-lg font-semibold inline-flex items-center gap-2 transition-all duration-300 btn-glow text-lg"
+            className="bg-[#70FFEB] hover:bg-[#9FFFF4] text-black px-10 py-4 rounded-lg font-semibold inline-flex items-center gap-2 transition-all duration-300 btn-glow text-lg"
           >
             Create Account <ArrowRight size={22} />
           </Link>

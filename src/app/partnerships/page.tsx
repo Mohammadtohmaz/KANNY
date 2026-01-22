@@ -26,7 +26,7 @@ const benefits = [
 
 export default function Partnerships() {
   return (
-    <div className="py-16 bg-[#0d1421] min-h-screen">
+    <div className="py-16 bg-[#0F142D] min-h-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Hero */}
         <div className="text-center mb-16">
@@ -44,8 +44,8 @@ export default function Partnerships() {
           {benefits.map((benefit, index) => (
             <div key={index} className="gradient-border card-hover p-6 text-center">
               <div className="bg-[#141f3c] rounded-[calc(1rem-1px)]">
-                <div className="w-14 h-14 bg-gradient-to-br from-[#00d48a]/20 to-[#00d48a]/20 rounded-xl flex items-center justify-center mx-auto mb-4 border border-[#00d48a]/30">
-                  <benefit.icon className="text-[#00d48a]" size={28} />
+                <div className="w-14 h-14 bg-gradient-to-br from-[#70FFEB]/20 to-[#70FFEB]/20 rounded-xl flex items-center justify-center mx-auto mb-4 border border-[#70FFEB]/30">
+                  <benefit.icon className="text-[#70FFEB]" size={28} />
                 </div>
                 <h3 className="text-lg font-semibold mb-2 text-white">{benefit.title}</h3>
                 <p className="text-gray-500 text-sm">{benefit.description}</p>
@@ -80,7 +80,7 @@ export default function Partnerships() {
           <h2 className="text-2xl font-bold text-center mb-8 text-white">How It Works</h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="w-12 h-12 bg-gradient-to-r from-[#00d48a] to-[#00d48a] text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-lg glow-green">
+              <div className="w-12 h-12 bg-gradient-to-r from-[#70FFEB] to-[#70FFEB] text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-lg glow-green">
                 1
               </div>
               <h3 className="font-semibold mb-2 text-white">Sign Up</h3>
@@ -90,7 +90,7 @@ export default function Partnerships() {
               </p>
             </div>
             <div className="text-center">
-              <div className="w-12 h-12 bg-gradient-to-r from-[#00d48a] to-[#00d48a] text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-lg glow-green">
+              <div className="w-12 h-12 bg-gradient-to-r from-[#70FFEB] to-[#70FFEB] text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-lg glow-green">
                 2
               </div>
               <h3 className="font-semibold mb-2 text-white">Share</h3>
@@ -99,7 +99,7 @@ export default function Partnerships() {
               </p>
             </div>
             <div className="text-center">
-              <div className="w-12 h-12 bg-gradient-to-r from-[#00d48a] to-[#00d48a] text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-lg glow-green">
+              <div className="w-12 h-12 bg-gradient-to-r from-[#70FFEB] to-[#70FFEB] text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-lg glow-green">
                 3
               </div>
               <h3 className="font-semibold mb-2 text-white">Earn</h3>
@@ -119,7 +119,7 @@ export default function Partnerships() {
             </p>
             <Link
               href="/register"
-              className="bg-gradient-to-r from-[#00d48a] to-[#00d48a] hover:from-[#00d48a] hover:to-[#00ff9d] text-white px-8 py-3 rounded-lg font-semibold inline-block transition-all duration-300 btn-glow"
+              className="bg-gradient-to-r from-[#70FFEB] to-[#70FFEB] hover:from-[#70FFEB] hover:to-[#9FFFF4] text-white px-8 py-3 rounded-lg font-semibold inline-block transition-all duration-300 btn-glow"
             >
               Become a Partner
             </Link>

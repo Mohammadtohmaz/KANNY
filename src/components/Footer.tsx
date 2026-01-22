@@ -20,7 +20,7 @@ const footerLinks = {
 
 export default function Footer() {
   return (
-    <footer className="bg-[#0d1421] text-gray-400 border-t border-white/5">
+    <footer className="bg-[#0F142D] text-gray-400 border-t border-white/5">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
@@ -32,13 +32,13 @@ export default function Footer() {
               Bet on Everything, Everywhere. Simple & Smart.
             </p>
             <div className="flex space-x-4 mt-4">
-              <a href="#" className="hover:text-[#00d48a] transition-colors duration-200">
+              <a href="#" className="hover:text-[#70FFEB] transition-colors duration-200">
                 <Instagram size={20} />
               </a>
-              <a href="#" className="hover:text-[#00d48a] transition-colors duration-200">
+              <a href="#" className="hover:text-[#70FFEB] transition-colors duration-200">
                 <Linkedin size={20} />
               </a>
-              <a href="#" className="hover:text-[#00d48a] transition-colors duration-200">
+              <a href="#" className="hover:text-[#70FFEB] transition-colors duration-200">
                 <Facebook size={20} />
               </a>
             </div>
@@ -50,7 +50,7 @@ export default function Footer() {
             <ul className="space-y-2">
               {footerLinks.company.map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="hover:text-[#00d48a] transition-colors duration-200 text-sm">
+                  <Link href={link.href} className="hover:text-[#70FFEB] transition-colors duration-200 text-sm">
                     {link.label}
                   </Link>
                 </li>
@@ -64,7 +64,7 @@ export default function Footer() {
             <ul className="space-y-2">
               {footerLinks.resources.map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="hover:text-[#00d48a] transition-colors duration-200 text-sm">
+                  <Link href={link.href} className="hover:text-[#70FFEB] transition-colors duration-200 text-sm">
                     {link.label}
                   </Link>
                 </li>
@@ -78,7 +78,7 @@ export default function Footer() {
             <ul className="space-y-2">
               {footerLinks.legal.map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="hover:text-[#00d48a] transition-colors duration-200 text-sm">
+                  <Link href={link.href} className="hover:text-[#70FFEB] transition-colors duration-200 text-sm">
                     {link.label}
                   </Link>
                 </li>

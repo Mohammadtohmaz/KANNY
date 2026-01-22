@@ -1,12 +1,12 @@
 @import "tailwindcss";
 
 :root {
-  /* ArrowBets Color Scheme - Navy + Green */
-  --color-bg: #0d1421;
+  /* ArrowTrade Color Scheme - Navy + Cyan/Teal */
+  --color-bg: #0F142D;
   --color-bg-secondary: #141f3c;
   --color-bg-card: #1a2744;
-  --color-green: #00d48a;
-  --color-green-light: #00ff9d;
+  --color-green: #70FFEB;
+  --color-green-light: #9FFFF4;
   --foreground: #ededed;
   --foreground-muted: #9ca3af;
 }
@@ -40,14 +40,14 @@ body {
   mask-composite: exclude;
 }
 
-/* Glow Effects - Green only */
+/* Glow Effects - Cyan/Teal */
 .glow-green {
-  box-shadow: 0 0 20px rgba(0, 212, 138, 0.4), 0 0 40px rgba(0, 212, 138, 0.2);
+  box-shadow: 0 0 20px rgba(112, 255, 235, 0.4), 0 0 40px rgba(112, 255, 235, 0.2);
 }
 
 /* Button Hover Glow */
 .btn-glow:hover {
-  box-shadow: 0 0 25px rgba(0, 212, 138, 0.5), 0 0 50px rgba(0, 212, 138, 0.3);
+  box-shadow: 0 0 25px rgba(112, 255, 235, 0.5), 0 0 50px rgba(112, 255, 235, 0.3);
   transform: translateY(-2px);
 }
 
@@ -66,7 +66,7 @@ body {
 
 .card-hover:hover {
   transform: translateY(-4px);
-  box-shadow: 0 10px 40px rgba(0, 212, 138, 0.15), 0 0 20px rgba(0, 212, 138, 0.1);
+  box-shadow: 0 10px 40px rgba(112, 255, 235, 0.15), 0 0 20px rgba(112, 255, 235, 0.1);
 }
 
 /* Animated Gradient Background - Navy tones only */
@@ -89,4 +89,131 @@ body {
 
 .pulse-glow {
   animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* ===== MODERN POOL CARD EFFECTS ===== */
+
+/* Glass morphism card */
+.glass-card {
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  background: rgba(20, 31, 60, 0.7);
+  border: 1px solid rgba(112, 255, 235, 0.1);
+}
+
+/* Animated border glow */
+@keyframes border-glow {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(112, 255, 235, 0.3), inset 0 0 5px rgba(112, 255, 235, 0.05);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(112, 255, 235, 0.5), inset 0 0 10px rgba(112, 255, 235, 0.1);
+  }
+}
+
+.animated-border {
+  animation: border-glow 3s ease-in-out infinite;
+}
+
+/* Live indicator pulse */
+@keyframes live-pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0.5;
+  }
+}
+
+.live-indicator {
+  animation: live-pulse 2s ease-in-out infinite;
+}
+
+/* Card entrance animation */
+@keyframes card-enter {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card-enter {
+  animation: card-enter 0.5s ease-out forwards;
+}
+
+/* Image zoom on hover */
+.image-zoom {
+  transition: transform 0.5s ease;
+}
+
+.image-zoom:hover {
+  transform: scale(1.1);
+}
+
+/* Enhanced card with glow on hover */
+.modern-card {
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modern-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  padding: 1px;
+  border-radius: 1rem;
+  background: linear-gradient(135deg, rgba(112, 255, 235, 0.5), rgba(159, 255, 244, 0.2));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0.5;
+  transition: opacity 0.4s ease;
+}
+
+.modern-card:hover::before {
+  opacity: 1;
+}
+
+.modern-card:hover {
+  transform: translateY(-8px);
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.3),
+    0 0 30px rgba(112, 255, 235, 0.2),
+    0 0 60px rgba(112, 255, 235, 0.1);
+}
+
+/* Shimmer effect for loading/trending */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.shimmer {
+  background: linear-gradient(90deg, transparent, rgba(112, 255, 235, 0.1), transparent);
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+
+/* Hot badge glow */
+.hot-badge {
+  background: linear-gradient(135deg, #ff6b6b, #ffa500);
+  box-shadow: 0 0 10px rgba(255, 107, 107, 0.5);
+}
+
+/* Progress bar animation */
+@keyframes progress-fill {
+  from { width: 0; }
+}
+
+.progress-animated {
+  animation: progress-fill 1s ease-out;
 }

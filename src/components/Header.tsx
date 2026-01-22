@@ -5,18 +5,18 @@ import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 
 const navLinks = [
+  { href: '/how-it-works', label: 'Products' },
+  { href: '/plans', label: 'Account Types' },
   { href: '/about-us', label: 'About Us' },
-  { href: '/how-it-works', label: 'How It Works' },
-  { href: '/faq', label: 'FAQ' },
-  { href: '/plans', label: 'Plans' },
-  { href: '/partnerships', label: 'Partnerships' },
+  { href: '/partnerships', label: 'Partners' },
+  { href: '/faq', label: 'Support' },
 ];
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-[#0d1421]/95 backdrop-blur-md text-white sticky top-0 z-50 border-b border-white/5">
+    <header className="bg-[#0F142D]/95 backdrop-blur-md text-white sticky top-0 z-50 border-b border-white/5">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center">
@@ -29,7 +29,7 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-gray-400 hover:text-[#00d48a] transition-colors duration-200"
+                className="text-gray-400 hover:text-[#70FFEB] transition-colors duration-200"
               >
                 {link.label}
               </Link>
@@ -45,7 +45,7 @@ export default function Header() {
             </Link>
             <Link
               href="/register"
-              className="bg-[#00d48a] hover:bg-[#00ff9d] text-black px-5 py-2 rounded-lg transition-all duration-300 font-medium"
+              className="bg-[#70FFEB] hover:bg-[#9FFFF4] text-black px-5 py-2 rounded-lg transition-all duration-300 font-medium"
             >
               Get Started
             </Link>
@@ -67,7 +67,7 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="block py-2 text-gray-400 hover:text-[#00d48a] transition-colors"
+                className="block py-2 text-gray-400 hover:text-[#70FFEB] transition-colors"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 {link.label}
@@ -79,7 +79,7 @@ export default function Header() {
               </Link>
               <Link
                 href="/register"
-                className="bg-[#00d48a] text-black px-4 py-2 rounded-lg"
+                className="bg-[#70FFEB] text-black px-4 py-2 rounded-lg"
               >
                 Get Started
               </Link>

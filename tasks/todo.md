@@ -1,111 +1,63 @@
-# Oddsi Clone - Frontend UI/UX Testing
+# ArrowTrade Color Update
 
-## Project Overview
-Create a frontend-only clone of oddsi.io using Next.js + React for UI/UX testing purposes. All data will be mocked - no real backend or trading functionality.
+## Task: Update colors to match Arrow Trade brand guidelines
 
----
-
-## Phase 1: Project Setup
-- [x] Initialize Next.js project with TypeScript
-- [x] Set up Tailwind CSS for styling
-- [x] Create basic folder structure (components, pages, data, styles)
-
-## Phase 2: Core Layout Components
-- [x] Header/Navigation component (logo, nav links, login/register buttons)
-- [x] Footer component (links, social icons, disclaimers)
-- [x] Layout wrapper component
-
-## Phase 3: Main Pages
-- [x] Home page (hero, featured pools, key features, CTA sections)
-- [x] About Us page
-- [x] How It Works page (step-by-step explanation)
-- [x] FAQ page (accordion-style Q&A)
-- [x] Plans/Pricing page
-- [x] Partnerships page
-
-## Phase 4: Trading Pool Components
-- [x] Pool card component (showing event, odds, deadline, pool size)
-- [x] Pool list/grid component
-- [x] Mock data file with sample trading pools
-
-## Phase 5: Supporting Pages
-- [x] Login page (UI only)
-- [x] Register page (UI only)
-- [x] Privacy Policy page
-- [x] Terms & Conditions page
-- [x] Risk Disclaimer page
-
-## Phase 6: Polish & Testing
-- [x] Responsive design check (mobile, tablet, desktop)
-- [x] Navigation flow testing
-- [x] Final styling adjustments
+**Brand Palette (from PDF):**
+- Background: `#0F142D` (dark navy)
+- Accent: `#70FFEB` (cyan/teal)
+- White: `#FFFFFF`
 
 ---
 
-## Tech Stack
-- **Framework:** Next.js 14 (App Router)
-- **Language:** TypeScript
-- **Styling:** Tailwind CSS v4
-- **Icons:** Lucide React
+## Todo
 
-## Notes
-- All trading data is mocked (no real API calls)
-- No actual authentication - just UI mockups
-- Focus on visual fidelity and user flow for testing purposes
+- [x] Update globals.css CSS variables with new brand colors
+- [x] Search and update any hardcoded color values in components
+- [x] Update CLAUDE.md image generation notes to reflect new brand colors
 
 ---
 
 ## Review
 
-### Completed: January 2025
+### Summary of Changes
 
-### Summary
-Successfully built a frontend-only clone of oddsi.io with all 11 pages and core components.
+Updated all color values across the codebase to match the Arrow Trade brand guidelines:
 
-### Files Created
+**Color Mappings:**
+| Old | New | Purpose |
+|-----|-----|---------|
+| `#0d1421` | `#0F142D` | Background |
+| `#00d48a` | `#70FFEB` | Accent (cyan/teal) |
+| `#00ff9d` | `#9FFFF4` | Accent light |
 
-**Configuration:**
-- `package.json` - Dependencies and scripts
-- `tsconfig.json` - TypeScript configuration
-- `tailwind.config.ts` - Tailwind configuration
-- `postcss.config.js` - PostCSS with @tailwindcss/postcss
-- `next.config.js` - Next.js configuration
+### Files Modified
 
-**Components (src/components/):**
-- `Header.tsx` - Navigation with mobile menu
-- `Footer.tsx` - Footer with links and social icons
-- `PoolCard.tsx` - Trading pool display card
-- `FaqAccordion.tsx` - Expandable FAQ component
+**CSS:**
+- `src/app/globals.css` - Updated CSS variables and rgba values
 
-**Pages (src/app/):**
-- `/` - Home page with hero, features, and pool grid
-- `/about-us` - Company info, mission, vision, values
-- `/how-it-works` - Step-by-step trading explanation
-- `/faq` - FAQ with accordion
-- `/plans` - Pricing tiers (Free, Pro, Elite)
-- `/partnerships` - Affiliate program info
-- `/login` - Login form UI
-- `/register` - Registration form UI
-- `/privacy-policy` - Privacy policy content
-- `/terms-conditions` - Terms and conditions
-- `/risk-disclaimer` - Risk warnings
+**Components:**
+- `src/components/Header.tsx`
+- `src/components/Footer.tsx`
+- `src/components/PoolCard.tsx`
+- `src/components/FaqAccordion.tsx`
 
-**Mock Data (src/data/):**
-- `pools.ts` - 6 sample trading pools
-- `faq.ts` - 12 FAQ items
+**Pages:**
+- `src/app/page.tsx`
+- `src/app/login/page.tsx`
+- `src/app/register/page.tsx`
+- `src/app/faq/page.tsx`
+- `src/app/partnerships/page.tsx`
+- `src/app/plans/page.tsx`
+- `src/app/about-us/page.tsx`
+- `src/app/how-it-works/page.tsx`
+- `src/app/privacy-policy/page.tsx`
+- `src/app/terms-conditions/page.tsx`
+- `src/app/risk-disclaimer/page.tsx`
 
-### Success Criteria Verification
-- ✅ All 11 pages render without errors
-- ✅ Navigation works between all pages
-- ✅ Responsive design (mobile + desktop)
-- ✅ Home page shows mock trading pools
-- ✅ FAQ accordion expands/collapses
-- ✅ Forms have proper input fields
-- ✅ `npm run build` succeeds with no errors
+**Config:**
+- `CLAUDE.md` - Updated image generation color notes
 
-### How to Run
-```bash
-npm run dev    # Development server at http://localhost:3000
-npm run build  # Production build
-npm run start  # Production server
-```
+### Notes
+- Accent color changed from green (#00d48a) to cyan/teal (#70FFEB)
+- Background updated to exact brand color (#0F142D)
+- All hardcoded colors replaced with new brand palette

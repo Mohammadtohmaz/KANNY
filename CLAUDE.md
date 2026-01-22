@@ -25,4 +25,4 @@
 - **Avoid:** Lucid Realism (hyperrealistic) - too stock-photo-like for this project
 - **Style settings:** CINEMATIC, MOODY, or VIBRANT depending on context
 - **Dimensions:** Width/height must be multiples of 8 (e.g., 800x504)
-- **Theme:** Purple (#802ddf) and green (#00d48a) ambient lighting to match brand colors
+- **Theme:** Navy (#0F142D) and cyan/teal (#70FFEB) ambient lighting to match brand colors

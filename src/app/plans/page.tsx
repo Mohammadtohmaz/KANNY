@@ -48,7 +48,7 @@ const plans = [
 
 export default function Plans() {
   return (
-    <div className="py-16 bg-[#0d1421] min-h-screen">
+    <div className="py-16 bg-[#0F142D] min-h-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">
@@ -65,7 +65,7 @@ export default function Plans() {
               key={plan.name}
               className={`rounded-xl overflow-hidden ${
                 plan.highlighted
-                  ? 'bg-gradient-to-b from-[#00d48a] to-[#00d48a] p-[1px] scale-105'
+                  ? 'bg-gradient-to-b from-[#70FFEB] to-[#70FFEB] p-[1px] scale-105'
                   : 'gradient-border'
               }`}
             >
@@ -77,7 +77,7 @@ export default function Plans() {
                 <ul className="space-y-3 mb-8">
                   {plan.features.map((feature, index) => (
                     <li key={index} className="flex items-start gap-2">
-                      <Check size={20} className="text-[#00d48a] mt-0.5" />
+                      <Check size={20} className="text-[#70FFEB] mt-0.5" />
                       <span className="text-gray-300">{feature}</span>
                     </li>
                   ))}
@@ -87,8 +87,8 @@ export default function Plans() {
                   href="/register"
                   className={`block text-center py-3 rounded-lg font-semibold transition-all duration-300 ${
                     plan.highlighted
-                      ? 'bg-gradient-to-r from-[#00d48a] to-[#00d48a] hover:from-[#00d48a] hover:to-[#00ff9d] text-white btn-glow'
-                      : 'border border-white/20 hover:border-[#00d48a]/50 text-white hover:bg-white/5'
+                      ? 'bg-gradient-to-r from-[#70FFEB] to-[#70FFEB] hover:from-[#70FFEB] hover:to-[#9FFFF4] text-white btn-glow'
+                      : 'border border-white/20 hover:border-[#70FFEB]/50 text-white hover:bg-white/5'
                   }`}
                 >
                   {plan.cta}

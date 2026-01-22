@@ -3,7 +3,7 @@ import { faqItems } from '@/data/faq';
 
 export default function FAQ() {
   return (
-    <div className="py-16 bg-[#0d1421] min-h-screen">
+    <div className="py-16 bg-[#0F142D] min-h-screen">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">
@@ -24,7 +24,7 @@ export default function FAQ() {
             </p>
             <a
               href="mailto:support@arrowbets.com"
-              className="text-[#00d48a] hover:text-[#00ff9d] font-medium transition-colors"
+              className="text-[#70FFEB] hover:text-[#9FFFF4] font-medium transition-colors"
             >
               Contact Support →
             </a>

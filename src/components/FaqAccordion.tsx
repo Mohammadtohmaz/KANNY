@@ -29,7 +29,7 @@ export default function FaqAccordion({ items }: FaqAccordionProps) {
             <span className="font-medium text-white">{item.question}</span>
             <ChevronDown
               size={20}
-              className={`text-[#00d48a] transition-transform duration-300 ${
+              className={`text-[#70FFEB] transition-transform duration-300 ${
                 openIndex === index ? 'rotate-180' : ''
               }`}
             />

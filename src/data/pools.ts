@@ -20,7 +20,7 @@ export const pools: Pool[] = [
     poolSize: '$45,230',
     deadline: 'Aug 15, 2025',
     category: 'Commodities',
-    image: '/images/pools/confident-trader.jpg'
+    image: '/images/pools/gold-trading.jpg'
   },
   {
     id: '2',
@@ -31,7 +31,7 @@ export const pools: Pool[] = [
     poolSize: '$128,500',
     deadline: 'Sep 18, 2025',
     category: 'Interest Rates',
-    image: '/images/pools/sleeping-trader.jpg'
+    image: '/images/pools/fed-rates.jpg'
   },
   {
     id: '3',
@@ -42,7 +42,7 @@ export const pools: Pool[] = [
     poolSize: '$67,890',
     deadline: 'Sep 30, 2025',
     category: 'Forex',
-    image: '/images/pools/female-trader.jpg'
+    image: '/images/pools/forex-eurusd.jpg'
   },
   {
     id: '4',
@@ -53,7 +53,7 @@ export const pools: Pool[] = [
     poolSize: '$234,100',
     deadline: 'Aug 13, 2025',
     category: 'Economic Data',
-    image: '/images/pools/stressed-trader.jpg'
+    image: '/images/pools/inflation-data.jpg'
   },
   {
     id: '5',
@@ -64,7 +64,7 @@ export const pools: Pool[] = [
     poolSize: '$567,000',
     deadline: 'Dec 31, 2025',
     category: 'Crypto',
-    image: '/images/pools/crypto-trader.jpg'
+    image: '/images/pools/bitcoin-crypto.jpg'
   },
   {
     id: '6',
@@ -75,6 +75,6 @@ export const pools: Pool[] = [
     poolSize: '$89,340',
     deadline: 'Aug 2, 2025',
     category: 'Economic Data',
-    image: '/images/pools/happy-trader.jpg'
+    image: '/images/pools/jobs-payrolls.jpg'
   }
 ];

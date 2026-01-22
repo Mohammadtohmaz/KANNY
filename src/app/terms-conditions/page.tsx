@@ -1,6 +1,6 @@
 export default function TermsConditions() {
   return (
-    <div className="py-16 bg-[#0d1421] min-h-screen">
+    <div className="py-16 bg-[#0F142D] min-h-screen">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-4xl font-bold mb-4 text-white">Terms & Conditions</h1>
         <p className="text-gray-500 mb-8">Last updated: January 2025</p>
@@ -8,7 +8,7 @@ export default function TermsConditions() {
         <div className="space-y-8">
           <section className="gradient-border p-6">
             <div className="bg-[#141f3c] rounded-[calc(1rem-1px)]">
-              <h2 className="text-2xl font-semibold mb-4 text-[#00d48a]">1. Company Information</h2>
+              <h2 className="text-2xl font-semibold mb-4 text-[#70FFEB]">1. Company Information</h2>
               <p className="text-gray-400">
                 <strong className="text-white">Legal Entity:</strong> BAZ Capital Markets Ltd (also &quot;IFunds LTD&quot;)<br />
                 <strong className="text-white">Jurisdiction:</strong> Saint Lucia (Registration 2024-00154)<br />
@@ -19,7 +19,7 @@ export default function TermsConditions() {
 
           <section className="gradient-border p-6">
             <div className="bg-[#141f3c] rounded-[calc(1rem-1px)]">
-              <h2 className="text-2xl font-semibold mb-4 text-[#00d48a]">2. Nature of Services</h2>
+              <h2 className="text-2xl font-semibold mb-4 text-[#70FFEB]">2. Nature of Services</h2>
               <p className="text-gray-400">
                 The platform offers Over-the-Counter (OTC) derivative trading including Margin FX
                 Contracts and Contracts for Difference (CFDs). You should not deal in OTC derivative
@@ -30,7 +30,7 @@ export default function TermsConditions() {
 
           <section className="gradient-border p-6">
             <div className="bg-[#141f3c] rounded-[calc(1rem-1px)]">
-              <h2 className="text-2xl font-semibold mb-4 text-[#00d48a]">3. Risk Disclosure</h2>
+              <h2 className="text-2xl font-semibold mb-4 text-[#70FFEB]">3. Risk Disclosure</h2>
               <p className="text-gray-400">
                 These instruments involve significant leverage that can amplify both gains and losses
                 beyond initial deposits. Clients acknowledge that the risk of loss arising from trading
@@ -41,7 +41,7 @@ export default function TermsConditions() {
 
           <section className="gradient-border p-6">
             <div className="bg-[#141f3c] rounded-[calc(1rem-1px)]">
-              <h2 className="text-2xl font-semibold mb-4 text-[#00d48a]">4. User Obligations</h2>
+              <h2 className="text-2xl font-semibold mb-4 text-[#70FFEB]">4. User Obligations</h2>
               <ul className="list-disc pl-6 text-gray-400 space-y-2">
                 <li>Users bear responsibility for technical failures on their end</li>
                 <li>Users must ensure accurate account information</li>
@@ -53,7 +53,7 @@ export default function TermsConditions() {
 
           <section className="gradient-border p-6">
             <div className="bg-[#141f3c] rounded-[calc(1rem-1px)]">
-              <h2 className="text-2xl font-semibold mb-4 text-[#00d48a]">5. Geographic Restrictions</h2>
+              <h2 className="text-2xl font-semibold mb-4 text-[#70FFEB]">5. Geographic Restrictions</h2>
               <p className="text-gray-400">
                 ArrowBets does not provide services to residents of the United States, Iran, North Korea,
                 Syria, or Myanmar.
@@ -63,10 +63,10 @@ export default function TermsConditions() {
 
           <section className="gradient-border p-6">
             <div className="bg-[#141f3c] rounded-[calc(1rem-1px)]">
-              <h2 className="text-2xl font-semibold mb-4 text-[#00d48a]">6. Contact</h2>
+              <h2 className="text-2xl font-semibold mb-4 text-[#70FFEB]">6. Contact</h2>
               <p className="text-gray-400">
                 For questions about these terms, contact us at:{' '}
-                <a href="mailto:legal@arrowbets.com" className="text-[#00d48a] hover:text-[#00ff9d] transition-colors">
+                <a href="mailto:legal@arrowbets.com" className="text-[#70FFEB] hover:text-[#9FFFF4] transition-colors">
                   legal@arrowbets.com
                 </a>
               </p>

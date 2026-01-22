@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function Login() {
   return (
-    <div className="min-h-[80vh] flex items-center justify-center py-16 bg-[#0d1421]">
+    <div className="min-h-[80vh] flex items-center justify-center py-16 bg-[#0F142D]">
       <div className="max-w-md w-full mx-4">
         <div className="gradient-border overflow-hidden">
           <div className="p-8 bg-[#141f3c]">
@@ -20,7 +20,7 @@ export default function Login() {
                   type="email"
                   id="email"
                   name="email"
-                  className="w-full px-4 py-3 bg-[#0d1421] border border-white/10 rounded-lg focus:ring-2 focus:ring-[#00d48a]/50 focus:border-[#00d48a] outline-none transition-all text-white placeholder-gray-500"
+                  className="w-full px-4 py-3 bg-[#0F142D] border border-white/10 rounded-lg focus:ring-2 focus:ring-[#70FFEB]/50 focus:border-[#70FFEB] outline-none transition-all text-white placeholder-gray-500"
                   placeholder="you@example.com"
                 />
               </div>
@@ -33,24 +33,24 @@ export default function Login() {
                   type="password"
                   id="password"
                   name="password"
-                  className="w-full px-4 py-3 bg-[#0d1421] border border-white/10 rounded-lg focus:ring-2 focus:ring-[#00d48a]/50 focus:border-[#00d48a] outline-none transition-all text-white placeholder-gray-500"
+                  className="w-full px-4 py-3 bg-[#0F142D] border border-white/10 rounded-lg focus:ring-2 focus:ring-[#70FFEB]/50 focus:border-[#70FFEB] outline-none transition-all text-white placeholder-gray-500"
                   placeholder="••••••••"
                 />
               </div>
 
               <div className="flex items-center justify-between">
                 <label className="flex items-center">
-                  <input type="checkbox" className="w-4 h-4 rounded bg-[#0d1421] border-white/10 text-[#00d48a] focus:ring-[#00d48a]" />
+                  <input type="checkbox" className="w-4 h-4 rounded bg-[#0F142D] border-white/10 text-[#70FFEB] focus:ring-[#70FFEB]" />
                   <span className="ml-2 text-sm text-gray-400">Remember me</span>
                 </label>
-                <a href="#" className="text-sm text-[#00d48a] hover:text-[#00ff9d] transition-colors">
+                <a href="#" className="text-sm text-[#70FFEB] hover:text-[#9FFFF4] transition-colors">
                   Forgot password?
                 </a>
               </div>
 
               <button
                 type="submit"
-                className="w-full bg-[#00d48a] hover:bg-[#00ff9d] text-black py-3 rounded-lg font-semibold transition-all duration-300 btn-glow"
+                className="w-full bg-[#70FFEB] hover:bg-[#9FFFF4] text-black py-3 rounded-lg font-semibold transition-all duration-300 btn-glow"
               >
                 Sign In
               </button>
@@ -59,7 +59,7 @@ export default function Login() {
             <div className="mt-6 text-center">
               <p className="text-gray-400">
                 Don&apos;t have an account?{' '}
-                <Link href="/register" className="text-[#00d48a] hover:text-[#00ff9d] font-medium transition-colors">
+                <Link href="/register" className="text-[#70FFEB] hover:text-[#9FFFF4] font-medium transition-colors">
                   Sign up
                 </Link>
               </p>

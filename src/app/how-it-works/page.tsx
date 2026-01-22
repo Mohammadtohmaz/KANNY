@@ -29,7 +29,7 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <div className="py-16 bg-[#0d1421] min-h-screen">
+    <div className="py-16 bg-[#0F142D] min-h-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Hero */}
         <div className="text-center mb-16">
@@ -44,7 +44,7 @@ export default function HowItWorks() {
 
         {/* Steps */}
         <div className="relative mb-20">
-          <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-px bg-gradient-to-b from-[#00d48a] to-[#00d48a]" />
+          <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-px bg-gradient-to-b from-[#70FFEB] to-[#70FFEB]" />
           <div className="space-y-12">
             {steps.map((step, index) => (
               <div key={index} className="relative">
@@ -60,8 +60,8 @@ export default function HowItWorks() {
                       }`}
                     >
                       <div className="bg-[#141f3c] rounded-[calc(1rem-1px)] p-2">
-                        <div className="w-12 h-12 bg-gradient-to-br from-[#00d48a]/20 to-[#00d48a]/20 rounded-lg flex items-center justify-center mb-4 border border-[#00d48a]/30">
-                          <step.icon className="text-[#00d48a]" size={24} />
+                        <div className="w-12 h-12 bg-gradient-to-br from-[#70FFEB]/20 to-[#70FFEB]/20 rounded-lg flex items-center justify-center mb-4 border border-[#70FFEB]/30">
+                          <step.icon className="text-[#70FFEB]" size={24} />
                         </div>
                         <h3 className="text-xl font-semibold mb-2 text-white">{step.title}</h3>
                         <p className="text-gray-400">{step.description}</p>
@@ -69,7 +69,7 @@ export default function HowItWorks() {
                     </div>
                   </div>
                   <div className="hidden md:flex md:w-1/2 justify-center">
-                    <div className="w-12 h-12 bg-gradient-to-r from-[#00d48a] to-[#00d48a] rounded-full flex items-center justify-center text-white font-bold text-lg glow-green">
+                    <div className="w-12 h-12 bg-gradient-to-r from-[#70FFEB] to-[#70FFEB] rounded-full flex items-center justify-center text-white font-bold text-lg glow-green">
                       {index + 1}
                     </div>
                   </div>
@@ -88,15 +88,15 @@ export default function HowItWorks() {
               (&quot;No&quot;). You each stake $100.
             </p>
             <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-[#00d48a]/10 border border-[#00d48a]/30 rounded-lg p-4">
-                <h3 className="font-semibold text-[#00d48a] mb-2">If Jobs Beat Expectations</h3>
+              <div className="bg-[#70FFEB]/10 border border-[#70FFEB]/30 rounded-lg p-4">
+                <h3 className="font-semibold text-[#70FFEB] mb-2">If Jobs Beat Expectations</h3>
                 <p className="text-gray-400">
                   You win! Your $100 stake returns ~$195 (your original stake plus the
                   opponent&apos;s, minus fees).
                 </p>
               </div>
-              <div className="bg-[#00d48a]/10 border border-[#00d48a]/30 rounded-lg p-4">
-                <h3 className="font-semibold text-[#00d48a] mb-2">If Jobs Miss Expectations</h3>
+              <div className="bg-[#70FFEB]/10 border border-[#70FFEB]/30 rounded-lg p-4">
+                <h3 className="font-semibold text-[#70FFEB] mb-2">If Jobs Miss Expectations</h3>
                 <p className="text-gray-400">
                   The other bettor wins. Your $100 stake goes to them (minus fees).
                 </p>
