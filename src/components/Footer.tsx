@@ -26,10 +26,10 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <Link href="/" className="flex items-center">
-              <img src="/images/arrowbets-logo.svg" alt="ArrowBets" className="h-8" />
+              <img src="/images/arrowbets-logo.svg" alt="ArrowBets" className="h-12" />
             </Link>
             <p className="mt-4 text-sm text-gray-500">
-              Bet on Everything, Everywhere. Simple & Smart.
+              Trade Everything, Everywhere. Simple & Smart.
             </p>
             <div className="flex space-x-4 mt-4">
               <a href="#" className="hover:text-[#70FFEB] transition-colors duration-200">
@@ -89,7 +89,7 @@ export default function Footer() {
 
         <div className="border-t border-white/5 mt-8 pt-8">
           <p className="text-sm text-gray-500 text-center">
-            © 2025 ArrowBets. All Rights Reserved.
+            © 2025 ArrowTrade. All Rights Reserved.
           </p>
         </div>
       </div>
