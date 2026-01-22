@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 
@@ -20,7 +21,7 @@ export default function Header() {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center">
-            <img src="/images/arrowbets-logo.svg" alt="ArrowBets" className="h-12" />
+            <Image src="/images/arrowbets-logo.svg" alt="ArrowBets" width={163} height={48} />
           </Link>
 
           {/* Desktop Navigation */}

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Instagram, Linkedin, Facebook } from 'lucide-react';
 
 const footerLinks = {
@@ -26,7 +27,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <Link href="/" className="flex items-center">
-              <img src="/images/arrowbets-logo.svg" alt="ArrowBets" className="h-12" />
+              <Image src="/images/arrowbets-logo.svg" alt="ArrowBets" width={163} height={48} />
             </Link>
             <p className="mt-4 text-sm text-gray-500">
               Trade Everything, Everywhere. Simple & Smart.
