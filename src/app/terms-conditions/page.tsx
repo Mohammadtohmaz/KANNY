@@ -1,13 +1,13 @@
 export default function TermsConditions() {
   return (
-    <div className="py-16 bg-[#01010b] min-h-screen">
+    <div className="py-16 bg-[#0d1421] min-h-screen">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-4xl font-bold mb-4 text-white">Terms & Conditions</h1>
         <p className="text-gray-500 mb-8">Last updated: January 2025</p>
 
         <div className="space-y-8">
           <section className="gradient-border p-6">
-            <div className="bg-[#0a0a14] rounded-[calc(1rem-1px)]">
+            <div className="bg-[#141f3c] rounded-[calc(1rem-1px)]">
               <h2 className="text-2xl font-semibold mb-4 text-[#00d48a]">1. Company Information</h2>
               <p className="text-gray-400">
                 <strong className="text-white">Legal Entity:</strong> BAZ Capital Markets Ltd (also &quot;IFunds LTD&quot;)<br />
@@ -18,8 +18,8 @@ export default function TermsConditions() {
           </section>
 
           <section className="gradient-border p-6">
-            <div className="bg-[#0a0a14] rounded-[calc(1rem-1px)]">
-              <h2 className="text-2xl font-semibold mb-4 text-[#9945ff]">2. Nature of Services</h2>
+            <div className="bg-[#141f3c] rounded-[calc(1rem-1px)]">
+              <h2 className="text-2xl font-semibold mb-4 text-[#00d48a]">2. Nature of Services</h2>
               <p className="text-gray-400">
                 The platform offers Over-the-Counter (OTC) derivative trading including Margin FX
                 Contracts and Contracts for Difference (CFDs). You should not deal in OTC derivative
@@ -29,7 +29,7 @@ export default function TermsConditions() {
           </section>
 
           <section className="gradient-border p-6">
-            <div className="bg-[#0a0a14] rounded-[calc(1rem-1px)]">
+            <div className="bg-[#141f3c] rounded-[calc(1rem-1px)]">
               <h2 className="text-2xl font-semibold mb-4 text-[#00d48a]">3. Risk Disclosure</h2>
               <p className="text-gray-400">
                 These instruments involve significant leverage that can amplify both gains and losses
@@ -40,8 +40,8 @@ export default function TermsConditions() {
           </section>
 
           <section className="gradient-border p-6">
-            <div className="bg-[#0a0a14] rounded-[calc(1rem-1px)]">
-              <h2 className="text-2xl font-semibold mb-4 text-[#9945ff]">4. User Obligations</h2>
+            <div className="bg-[#141f3c] rounded-[calc(1rem-1px)]">
+              <h2 className="text-2xl font-semibold mb-4 text-[#00d48a]">4. User Obligations</h2>
               <ul className="list-disc pl-6 text-gray-400 space-y-2">
                 <li>Users bear responsibility for technical failures on their end</li>
                 <li>Users must ensure accurate account information</li>
@@ -52,22 +52,22 @@ export default function TermsConditions() {
           </section>
 
           <section className="gradient-border p-6">
-            <div className="bg-[#0a0a14] rounded-[calc(1rem-1px)]">
+            <div className="bg-[#141f3c] rounded-[calc(1rem-1px)]">
               <h2 className="text-2xl font-semibold mb-4 text-[#00d48a]">5. Geographic Restrictions</h2>
               <p className="text-gray-400">
-                Oddsi does not provide services to residents of the United States, Iran, North Korea,
+                ArrowTrade does not provide services to residents of the United States, Iran, North Korea,
                 Syria, or Myanmar.
               </p>
             </div>
           </section>
 
           <section className="gradient-border p-6">
-            <div className="bg-[#0a0a14] rounded-[calc(1rem-1px)]">
-              <h2 className="text-2xl font-semibold mb-4 text-[#9945ff]">6. Contact</h2>
+            <div className="bg-[#141f3c] rounded-[calc(1rem-1px)]">
+              <h2 className="text-2xl font-semibold mb-4 text-[#00d48a]">6. Contact</h2>
               <p className="text-gray-400">
                 For questions about these terms, contact us at:{' '}
-                <a href="mailto:legal@oddsi.io" className="text-[#00d48a] hover:text-[#00ff9d] transition-colors">
-                  legal@oddsi.io
+                <a href="mailto:legal@arrowtrade.com" className="text-[#00d48a] hover:text-[#00ff9d] transition-colors">
+                  legal@arrowtrade.com
                 </a>
               </p>
             </div>

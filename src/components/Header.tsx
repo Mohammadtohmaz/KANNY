@@ -16,11 +16,11 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-[#01010b]/95 backdrop-blur-md text-white sticky top-0 z-50 border-b border-white/5">
+    <header className="bg-[#0d1421]/95 backdrop-blur-md text-white sticky top-0 z-50 border-b border-white/5">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <Link href="/" className="text-2xl font-bold text-gradient">
-            Oddsi
+          <Link href="/" className="flex items-center">
+            <img src="/images/arrowtrade-logo.svg" alt="ArrowTrade" className="h-8" />
           </Link>
 
           {/* Desktop Navigation */}
@@ -45,9 +45,9 @@ export default function Header() {
             </Link>
             <Link
               href="/register"
-              className="bg-gradient-to-r from-[#802ddf] to-[#00d48a] hover:from-[#9945ff] hover:to-[#00ff9d] text-white px-5 py-2 rounded-lg transition-all duration-300 btn-glow font-medium"
+              className="bg-[#00d48a] hover:bg-[#00ff9d] text-black px-5 py-2 rounded-lg transition-all duration-300 font-medium"
             >
-              Register
+              Get Started
             </Link>
           </div>
 
@@ -79,9 +79,9 @@ export default function Header() {
               </Link>
               <Link
                 href="/register"
-                className="bg-gradient-to-r from-[#802ddf] to-[#00d48a] text-white px-4 py-2 rounded-lg"
+                className="bg-[#00d48a] text-black px-4 py-2 rounded-lg"
               >
-                Register
+                Get Started
               </Link>
             </div>
           </div>

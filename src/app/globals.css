@@ -1,11 +1,10 @@
 @import "tailwindcss";
 
 :root {
-  /* Oddsi Color Scheme */
-  --color-bg: #01010b;
-  --color-bg-secondary: #0a0a14;
-  --color-purple: #802ddf;
-  --color-purple-light: #9945ff;
+  /* ArrowTrade Color Scheme - Navy + Green */
+  --color-bg: #0d1421;
+  --color-bg-secondary: #141f3c;
+  --color-bg-card: #1a2744;
   --color-green: #00d48a;
   --color-green-light: #00ff9d;
   --foreground: #ededed;
@@ -21,7 +20,7 @@ body {
   background: var(--color-bg);
 }
 
-/* Gradient Border Utility */
+/* Gradient Border Utility - Green only */
 .gradient-border {
   position: relative;
   background: var(--color-bg-secondary);
@@ -34,24 +33,16 @@ body {
   inset: 0;
   padding: 1px;
   border-radius: 1rem;
-  background: linear-gradient(135deg, var(--color-purple), var(--color-green));
+  background: linear-gradient(135deg, var(--color-green), var(--color-green-light));
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
 }
 
-/* Glow Effects */
-.glow-purple {
-  box-shadow: 0 0 20px rgba(128, 45, 223, 0.4), 0 0 40px rgba(128, 45, 223, 0.2);
-}
-
+/* Glow Effects - Green only */
 .glow-green {
   box-shadow: 0 0 20px rgba(0, 212, 138, 0.4), 0 0 40px rgba(0, 212, 138, 0.2);
-}
-
-.glow-purple-green {
-  box-shadow: 0 0 20px rgba(128, 45, 223, 0.3), 0 0 40px rgba(0, 212, 138, 0.2);
 }
 
 /* Button Hover Glow */
@@ -60,9 +51,9 @@ body {
   transform: translateY(-2px);
 }
 
-/* Text Gradient */
+/* Text Gradient - Green tones */
 .text-gradient {
-  background: linear-gradient(135deg, var(--color-purple-light), var(--color-green));
+  background: linear-gradient(135deg, var(--color-green), var(--color-green-light));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -75,17 +66,17 @@ body {
 
 .card-hover:hover {
   transform: translateY(-4px);
-  box-shadow: 0 10px 40px rgba(128, 45, 223, 0.2), 0 0 20px rgba(0, 212, 138, 0.1);
+  box-shadow: 0 10px 40px rgba(0, 212, 138, 0.15), 0 0 20px rgba(0, 212, 138, 0.1);
 }
 
-/* Animated Gradient Background */
+/* Animated Gradient Background - Navy tones only */
 @keyframes gradient-shift {
   0%, 100% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
 }
 
 .animated-gradient {
-  background: linear-gradient(-45deg, #01010b, #1a0a2e, #0a1a1a, #01010b);
+  background: linear-gradient(-45deg, #0d1421, #141f3c, #0a1a1a, #0d1421);
   background-size: 400% 400%;
   animation: gradient-shift 15s ease infinite;
 }

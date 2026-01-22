@@ -7,8 +7,8 @@ import Footer from '@/components/Footer';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Oddsi - Event-Driven Trading Platform',
-  description: 'Small trades, unlimited gains. Trade on economic events with transparent payouts.',
+  title: 'ArrowTrade - Event-Driven Trading Platform',
+  description: 'Trade Everything, Everywhere. Simple & Smart. Event-driven trading with transparent payouts.',
 };
 
 export default function RootLayout({

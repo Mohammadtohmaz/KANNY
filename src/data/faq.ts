@@ -5,19 +5,19 @@ export interface FaqItem {
 
 export const faqItems: FaqItem[] = [
   {
-    question: 'What is Oddsi?',
-    answer: 'Oddsi is an event-based trading platform where users speculate on outcomes of economic news, market events, and price movements.'
+    question: 'What is ArrowTrade?',
+    answer: 'ArrowTrade is an event-based trading platform where users speculate on outcomes of economic news, market events, and price movements.'
   },
   {
-    question: 'How does Oddsi work?',
+    question: 'How does ArrowTrade work?',
     answer: 'The platform operates using a pool-based model where traders select positions and winning traders receive redistributed funds from losers.'
   },
   {
-    question: 'What can I trade on Oddsi?',
+    question: 'What can I trade on ArrowTrade?',
     answer: 'Users can trade predictions on inflation reports, interest rates, earnings results, and price movements across forex, stocks, crypto, and commodities.'
   },
   {
-    question: 'Is Oddsi peer-to-peer?',
+    question: 'Is ArrowTrade peer-to-peer?',
     answer: 'No. It employs a shared liquidity pool model rather than traditional peer-to-peer trading.'
   },
   {
@@ -26,10 +26,10 @@ export const faqItems: FaqItem[] = [
   },
   {
     question: 'How are payouts calculated?',
-    answer: 'Total funds staked by the losing side are proportionally distributed to the winning side after deducting Oddsi\'s fee.'
+    answer: 'Total funds staked by the losing side are proportionally distributed to the winning side after deducting ArrowTrade\'s fee.'
   },
   {
-    question: 'Is Oddsi similar to sports betting?',
+    question: 'Is ArrowTrade similar to sports betting?',
     answer: 'Structurally similar but focuses on financial and economic markets instead.'
   },
   {
@@ -45,7 +45,7 @@ export const faqItems: FaqItem[] = [
     answer: 'You can start with as little as $1.'
   },
   {
-    question: 'Does Oddsi trade against users?',
+    question: 'Does ArrowTrade trade against users?',
     answer: 'No. It functions as a neutral facilitator, never taking sides.'
   },
   {

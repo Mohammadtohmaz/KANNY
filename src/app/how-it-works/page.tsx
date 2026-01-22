@@ -29,12 +29,12 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <div className="py-16 bg-[#01010b] min-h-screen">
+    <div className="py-16 bg-[#0d1421] min-h-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Hero */}
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">
-            How <span className="text-gradient">Oddsi</span> Works
+            How <span className="text-gradient">ArrowTrade</span> Works
           </h1>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
             Event-driven trading made simple. Predict outcomes, trade against other
@@ -44,7 +44,7 @@ export default function HowItWorks() {
 
         {/* Steps */}
         <div className="relative mb-20">
-          <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-px bg-gradient-to-b from-[#802ddf] to-[#00d48a]" />
+          <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-px bg-gradient-to-b from-[#00d48a] to-[#00d48a]" />
           <div className="space-y-12">
             {steps.map((step, index) => (
               <div key={index} className="relative">
@@ -59,8 +59,8 @@ export default function HowItWorks() {
                         index % 2 === 0 ? 'md:mr-8' : 'md:ml-8'
                       }`}
                     >
-                      <div className="bg-[#0a0a14] rounded-[calc(1rem-1px)] p-2">
-                        <div className="w-12 h-12 bg-gradient-to-br from-[#802ddf]/20 to-[#00d48a]/20 rounded-lg flex items-center justify-center mb-4 border border-[#802ddf]/30">
+                      <div className="bg-[#141f3c] rounded-[calc(1rem-1px)] p-2">
+                        <div className="w-12 h-12 bg-gradient-to-br from-[#00d48a]/20 to-[#00d48a]/20 rounded-lg flex items-center justify-center mb-4 border border-[#00d48a]/30">
                           <step.icon className="text-[#00d48a]" size={24} />
                         </div>
                         <h3 className="text-xl font-semibold mb-2 text-white">{step.title}</h3>
@@ -69,7 +69,7 @@ export default function HowItWorks() {
                     </div>
                   </div>
                   <div className="hidden md:flex md:w-1/2 justify-center">
-                    <div className="w-12 h-12 bg-gradient-to-r from-[#802ddf] to-[#00d48a] rounded-full flex items-center justify-center text-white font-bold text-lg glow-purple-green">
+                    <div className="w-12 h-12 bg-gradient-to-r from-[#00d48a] to-[#00d48a] rounded-full flex items-center justify-center text-white font-bold text-lg glow-green">
                       {index + 1}
                     </div>
                   </div>
@@ -81,7 +81,7 @@ export default function HowItWorks() {
 
         {/* Example */}
         <div className="gradient-border overflow-hidden mb-16">
-          <div className="p-8 bg-[#0a0a14]">
+          <div className="p-8 bg-[#141f3c]">
             <h2 className="text-2xl font-bold mb-4 text-white">Example: Non-Farm Payrolls</h2>
             <p className="text-gray-400 mb-6">
               You predict stronger job growth (&quot;Yes&quot;) while another trader predicts weakness
@@ -95,8 +95,8 @@ export default function HowItWorks() {
                   opponent&apos;s, minus fees).
                 </p>
               </div>
-              <div className="bg-[#802ddf]/10 border border-[#802ddf]/30 rounded-lg p-4">
-                <h3 className="font-semibold text-[#9945ff] mb-2">If Jobs Miss Expectations</h3>
+              <div className="bg-[#00d48a]/10 border border-[#00d48a]/30 rounded-lg p-4">
+                <h3 className="font-semibold text-[#00d48a] mb-2">If Jobs Miss Expectations</h3>
                 <p className="text-gray-400">
                   The other trader wins. Your $100 stake goes to them (minus fees).
                 </p>

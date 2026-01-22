@@ -3,12 +3,12 @@ import { Target, Users, Globe } from 'lucide-react';
 
 export default function AboutUs() {
   return (
-    <div className="py-16 bg-[#01010b]">
+    <div className="py-16 bg-[#0d1421]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Hero */}
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">
-            About <span className="text-gradient">Oddsi</span>
+            About <span className="text-gradient">ArrowTrade</span>
           </h1>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
             Revolutionizing the way people trade through transparent, fair, and engaging
@@ -28,7 +28,7 @@ export default function AboutUs() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a14] to-transparent" />
             </div>
-            <div className="p-8 bg-[#0a0a14]">
+            <div className="p-8 bg-[#141f3c]">
               <h2 className="text-2xl font-bold mb-4 text-[#00d48a]">Our Mission</h2>
               <p className="text-gray-400">
                 To create a transparent, fair, and engaging platform that bridges traditional
@@ -47,8 +47,8 @@ export default function AboutUs() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a14] to-transparent" />
             </div>
-            <div className="p-8 bg-[#0a0a14]">
-              <h2 className="text-2xl font-bold mb-4 text-[#9945ff]">Our Vision</h2>
+            <div className="p-8 bg-[#141f3c]">
+              <h2 className="text-2xl font-bold mb-4 text-[#00d48a]">Our Vision</h2>
               <p className="text-gray-400">
                 To become the world&apos;s leading platform for event-driven trading, making
                 market participation accessible and intuitive for all experience levels
@@ -63,7 +63,7 @@ export default function AboutUs() {
           <h2 className="text-3xl font-bold text-center mb-8 text-white">Our Values</h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center gradient-border card-hover p-8">
-              <div className="w-16 h-16 bg-gradient-to-br from-[#802ddf]/20 to-[#00d48a]/20 rounded-full flex items-center justify-center mx-auto mb-4 border border-[#802ddf]/30">
+              <div className="w-16 h-16 bg-gradient-to-br from-[#00d48a]/20 to-[#00d48a]/20 rounded-full flex items-center justify-center mx-auto mb-4 border border-[#00d48a]/30">
                 <Target className="text-[#00d48a]" size={32} />
               </div>
               <h3 className="text-xl font-semibold mb-2 text-white">Transparency</h3>
@@ -72,8 +72,8 @@ export default function AboutUs() {
               </p>
             </div>
             <div className="text-center gradient-border card-hover p-8">
-              <div className="w-16 h-16 bg-gradient-to-br from-[#802ddf]/20 to-[#00d48a]/20 rounded-full flex items-center justify-center mx-auto mb-4 border border-[#802ddf]/30">
-                <Users className="text-[#9945ff]" size={32} />
+              <div className="w-16 h-16 bg-gradient-to-br from-[#00d48a]/20 to-[#00d48a]/20 rounded-full flex items-center justify-center mx-auto mb-4 border border-[#00d48a]/30">
+                <Users className="text-[#00d48a]" size={32} />
               </div>
               <h3 className="text-xl font-semibold mb-2 text-white">Fairness</h3>
               <p className="text-gray-500">
@@ -81,7 +81,7 @@ export default function AboutUs() {
               </p>
             </div>
             <div className="text-center gradient-border card-hover p-8">
-              <div className="w-16 h-16 bg-gradient-to-br from-[#802ddf]/20 to-[#00d48a]/20 rounded-full flex items-center justify-center mx-auto mb-4 border border-[#802ddf]/30">
+              <div className="w-16 h-16 bg-gradient-to-br from-[#00d48a]/20 to-[#00d48a]/20 rounded-full flex items-center justify-center mx-auto mb-4 border border-[#00d48a]/30">
                 <Globe className="text-[#00d48a]" size={32} />
               </div>
               <h3 className="text-xl font-semibold mb-2 text-white">Accessibility</h3>
@@ -103,7 +103,7 @@ export default function AboutUs() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a14] via-[#0a0a14]/50 to-transparent" />
           </div>
-          <div className="p-8 -mt-20 relative bg-[#0a0a14]">
+          <div className="p-8 -mt-20 relative bg-[#141f3c]">
             <h2 className="text-3xl font-bold text-center mb-4 text-white">Our Team</h2>
             <p className="text-center text-gray-400 max-w-2xl mx-auto">
               The founding team comprises traders, risk managers, and fintech innovators

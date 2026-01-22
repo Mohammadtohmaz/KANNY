@@ -48,7 +48,7 @@ const plans = [
 
 export default function Plans() {
   return (
-    <div className="py-16 bg-[#01010b] min-h-screen">
+    <div className="py-16 bg-[#0d1421] min-h-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">
@@ -65,11 +65,11 @@ export default function Plans() {
               key={plan.name}
               className={`rounded-xl overflow-hidden ${
                 plan.highlighted
-                  ? 'bg-gradient-to-b from-[#802ddf] to-[#00d48a] p-[1px] scale-105'
+                  ? 'bg-gradient-to-b from-[#00d48a] to-[#00d48a] p-[1px] scale-105'
                   : 'gradient-border'
               }`}
             >
-              <div className={`p-8 h-full ${plan.highlighted ? 'bg-[#0a0a14] rounded-xl' : 'bg-[#0a0a14]'}`}>
+              <div className={`p-8 h-full ${plan.highlighted ? 'bg-[#141f3c] rounded-xl' : 'bg-[#141f3c]'}`}>
                 <h2 className="text-2xl font-bold mb-2 text-white">{plan.name}</h2>
                 <div className="text-4xl font-bold mb-2 text-gradient">{plan.price}</div>
                 <p className="text-gray-400 mb-6">{plan.description}</p>
@@ -87,7 +87,7 @@ export default function Plans() {
                   href="/register"
                   className={`block text-center py-3 rounded-lg font-semibold transition-all duration-300 ${
                     plan.highlighted
-                      ? 'bg-gradient-to-r from-[#802ddf] to-[#00d48a] hover:from-[#9945ff] hover:to-[#00ff9d] text-white btn-glow'
+                      ? 'bg-gradient-to-r from-[#00d48a] to-[#00d48a] hover:from-[#00d48a] hover:to-[#00ff9d] text-white btn-glow'
                       : 'border border-white/20 hover:border-[#00d48a]/50 text-white hover:bg-white/5'
                   }`}
                 >

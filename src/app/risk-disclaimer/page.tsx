@@ -2,7 +2,7 @@ import { AlertTriangle } from 'lucide-react';
 
 export default function RiskDisclaimer() {
   return (
-    <div className="py-16 bg-[#01010b] min-h-screen">
+    <div className="py-16 bg-[#0d1421] min-h-screen">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center gap-3 mb-4">
           <AlertTriangle className="text-[#ff6b6b]" size={40} />
@@ -19,7 +19,7 @@ export default function RiskDisclaimer() {
 
         <div className="space-y-8">
           <section className="gradient-border p-6">
-            <div className="bg-[#0a0a14] rounded-[calc(1rem-1px)]">
+            <div className="bg-[#141f3c] rounded-[calc(1rem-1px)]">
               <h2 className="text-2xl font-semibold mb-4 text-[#ff6b6b]">Leverage Risk</h2>
               <p className="text-gray-400">
                 Even a slight fluctuation in the market could lead to a proportionately much larger
@@ -30,8 +30,8 @@ export default function RiskDisclaimer() {
           </section>
 
           <section className="gradient-border p-6">
-            <div className="bg-[#0a0a14] rounded-[calc(1rem-1px)]">
-              <h2 className="text-2xl font-semibold mb-4 text-[#9945ff]">Total Loss Potential</h2>
+            <div className="bg-[#141f3c] rounded-[calc(1rem-1px)]">
+              <h2 className="text-2xl font-semibold mb-4 text-[#00d48a]">Total Loss Potential</h2>
               <p className="text-gray-400">
                 Clients acknowledge that the risk of loss arising from trading can be substantial and
                 may exceed initial investments plus margin requirements. You should not trade unless
@@ -41,7 +41,7 @@ export default function RiskDisclaimer() {
           </section>
 
           <section className="gradient-border p-6">
-            <div className="bg-[#0a0a14] rounded-[calc(1rem-1px)]">
+            <div className="bg-[#141f3c] rounded-[calc(1rem-1px)]">
               <h2 className="text-2xl font-semibold mb-4 text-[#00d48a]">OTC Market Risks</h2>
               <p className="text-gray-400">
                 Over-the-counter derivatives involve greater risk than exchange-traded products because
@@ -52,8 +52,8 @@ export default function RiskDisclaimer() {
           </section>
 
           <section className="gradient-border p-6">
-            <div className="bg-[#0a0a14] rounded-[calc(1rem-1px)]">
-              <h2 className="text-2xl font-semibold mb-4 text-[#9945ff]">Volatility</h2>
+            <div className="bg-[#141f3c] rounded-[calc(1rem-1px)]">
+              <h2 className="text-2xl font-semibold mb-4 text-[#00d48a]">Volatility</h2>
               <p className="text-gray-400">
                 Price movements in underlying markets are volatile and unpredictable and are outside
                 of our control. Past performance is not indicative of future results.
@@ -62,7 +62,7 @@ export default function RiskDisclaimer() {
           </section>
 
           <section className="gradient-border p-6">
-            <div className="bg-[#0a0a14] rounded-[calc(1rem-1px)]">
+            <div className="bg-[#141f3c] rounded-[calc(1rem-1px)]">
               <h2 className="text-2xl font-semibold mb-4 text-[#00d48a]">Technical Risks</h2>
               <ul className="list-disc pl-6 text-gray-400 space-y-2">
                 <li>The company accepts no responsibility for trading platform disruptions</li>
@@ -73,7 +73,7 @@ export default function RiskDisclaimer() {
             </div>
           </section>
 
-          <section className="bg-[#0a0a14] border border-white/10 rounded-xl p-6">
+          <section className="bg-[#141f3c] border border-white/10 rounded-xl p-6">
             <h2 className="text-xl font-semibold mb-4 text-white">Acknowledgment</h2>
             <p className="text-gray-400">
               By using our platform, you acknowledge that you have read, understood, and accept

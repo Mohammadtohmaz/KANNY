@@ -20,16 +20,16 @@ const footerLinks = {
 
 export default function Footer() {
   return (
-    <footer className="bg-[#01010b] text-gray-400 border-t border-white/5">
+    <footer className="bg-[#0d1421] text-gray-400 border-t border-white/5">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div>
-            <Link href="/" className="text-2xl font-bold text-gradient">
-              Oddsi
+            <Link href="/" className="flex items-center">
+              <img src="/images/arrowtrade-logo.svg" alt="ArrowTrade" className="h-8" />
             </Link>
             <p className="mt-4 text-sm text-gray-500">
-              Event-driven trading platform. Small trades, unlimited gains.
+              Trade Everything, Everywhere. Simple & Smart.
             </p>
             <div className="flex space-x-4 mt-4">
               <a href="#" className="hover:text-[#00d48a] transition-colors duration-200">
@@ -89,8 +89,7 @@ export default function Footer() {
 
         <div className="border-t border-white/5 mt-8 pt-8">
           <p className="text-sm text-gray-500 text-center">
-            © 2025 Oddsi. All rights reserved. Trading involves significant risk.
-            Not available in USA, Iran, North Korea, Syria, or Myanmar.
+            © 2025 ArrowTrade. All Rights Reserved.
           </p>
         </div>
       </div>

@@ -26,12 +26,12 @@ const benefits = [
 
 export default function Partnerships() {
   return (
-    <div className="py-16 bg-[#01010b] min-h-screen">
+    <div className="py-16 bg-[#0d1421] min-h-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Hero */}
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">
-            Partner With <span className="text-gradient">Oddsi</span>
+            Partner With <span className="text-gradient">ArrowTrade</span>
           </h1>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
             Join one of the most rewarding affiliate programs in the trading space.
@@ -43,8 +43,8 @@ export default function Partnerships() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           {benefits.map((benefit, index) => (
             <div key={index} className="gradient-border card-hover p-6 text-center">
-              <div className="bg-[#0a0a14] rounded-[calc(1rem-1px)]">
-                <div className="w-14 h-14 bg-gradient-to-br from-[#802ddf]/20 to-[#00d48a]/20 rounded-xl flex items-center justify-center mx-auto mb-4 border border-[#802ddf]/30">
+              <div className="bg-[#141f3c] rounded-[calc(1rem-1px)]">
+                <div className="w-14 h-14 bg-gradient-to-br from-[#00d48a]/20 to-[#00d48a]/20 rounded-xl flex items-center justify-center mx-auto mb-4 border border-[#00d48a]/30">
                   <benefit.icon className="text-[#00d48a]" size={28} />
                 </div>
                 <h3 className="text-lg font-semibold mb-2 text-white">{benefit.title}</h3>
@@ -56,7 +56,7 @@ export default function Partnerships() {
 
         {/* Calculator */}
         <div className="gradient-border overflow-hidden mb-16">
-          <div className="p-8 bg-[#0a0a14]">
+          <div className="p-8 bg-[#141f3c]">
             <h2 className="text-2xl font-bold mb-8 text-center text-white">Earnings Example</h2>
             <div className="grid md:grid-cols-3 gap-8 text-center">
               <div>
@@ -80,17 +80,17 @@ export default function Partnerships() {
           <h2 className="text-2xl font-bold text-center mb-8 text-white">How It Works</h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="w-12 h-12 bg-gradient-to-r from-[#802ddf] to-[#00d48a] text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-lg glow-purple-green">
+              <div className="w-12 h-12 bg-gradient-to-r from-[#00d48a] to-[#00d48a] text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-lg glow-green">
                 1
               </div>
               <h3 className="font-semibold mb-2 text-white">Sign Up</h3>
               <p className="text-gray-400">
-                Every Oddsi user automatically becomes an affiliate with a unique
+                Every ArrowTrade user automatically becomes an affiliate with a unique
                 referral link.
               </p>
             </div>
             <div className="text-center">
-              <div className="w-12 h-12 bg-gradient-to-r from-[#802ddf] to-[#00d48a] text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-lg glow-purple-green">
+              <div className="w-12 h-12 bg-gradient-to-r from-[#00d48a] to-[#00d48a] text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-lg glow-green">
                 2
               </div>
               <h3 className="font-semibold mb-2 text-white">Share</h3>
@@ -99,7 +99,7 @@ export default function Partnerships() {
               </p>
             </div>
             <div className="text-center">
-              <div className="w-12 h-12 bg-gradient-to-r from-[#802ddf] to-[#00d48a] text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-lg glow-purple-green">
+              <div className="w-12 h-12 bg-gradient-to-r from-[#00d48a] to-[#00d48a] text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-lg glow-green">
                 3
               </div>
               <h3 className="font-semibold mb-2 text-white">Earn</h3>
@@ -112,14 +112,14 @@ export default function Partnerships() {
 
         {/* CTA */}
         <div className="text-center gradient-border p-10">
-          <div className="bg-[#0a0a14] rounded-[calc(1rem-1px)]">
+          <div className="bg-[#141f3c] rounded-[calc(1rem-1px)]">
             <h2 className="text-2xl font-bold mb-4 text-white">Ready to Start Earning?</h2>
             <p className="text-gray-400 mb-6">
               Sign up today and get your unique referral link instantly.
             </p>
             <Link
               href="/register"
-              className="bg-gradient-to-r from-[#802ddf] to-[#00d48a] hover:from-[#9945ff] hover:to-[#00ff9d] text-white px-8 py-3 rounded-lg font-semibold inline-block transition-all duration-300 btn-glow"
+              className="bg-gradient-to-r from-[#00d48a] to-[#00d48a] hover:from-[#00d48a] hover:to-[#00ff9d] text-white px-8 py-3 rounded-lg font-semibold inline-block transition-all duration-300 btn-glow"
             >
               Become a Partner
             </Link>
