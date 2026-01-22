@@ -8,7 +8,7 @@ export default function Register() {
           <div className="p-8 bg-[#141f3c]">
             <div className="text-center mb-8">
               <h1 className="text-3xl font-bold mb-2 text-white">Create Account</h1>
-              <p className="text-gray-400">Start trading in minutes</p>
+              <p className="text-gray-400">Start betting in minutes</p>
             </div>
 
             <form className="space-y-6">

@@ -8,10 +8,10 @@ export default function AboutUs() {
         {/* Hero */}
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">
-            About <span className="text-gradient">ArrowTrade</span>
+            About <span className="text-gradient">ArrowBets</span>
           </h1>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-            Revolutionizing the way people trade through transparent, fair, and engaging
+            Revolutionizing the way people bet through transparent, fair, and engaging
             event-driven markets.
           </p>
         </div>
@@ -32,7 +32,7 @@ export default function AboutUs() {
               <h2 className="text-2xl font-bold mb-4 text-[#00d48a]">Our Mission</h2>
               <p className="text-gray-400">
                 To create a transparent, fair, and engaging platform that bridges traditional
-                finance and modern user expectations. We empower traders through gamification
+                finance and modern user expectations. We empower bettors through gamification
                 while rewarding knowledge and strategy over leverage manipulation.
               </p>
             </div>
@@ -50,7 +50,7 @@ export default function AboutUs() {
             <div className="p-8 bg-[#141f3c]">
               <h2 className="text-2xl font-bold mb-4 text-[#00d48a]">Our Vision</h2>
               <p className="text-gray-400">
-                To become the world&apos;s leading platform for event-driven trading, making
+                To become the world&apos;s leading platform for event-driven betting, making
                 market participation accessible and intuitive for all experience levels
                 while promoting transparency and fairness.
               </p>

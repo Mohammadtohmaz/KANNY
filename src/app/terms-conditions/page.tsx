@@ -55,7 +55,7 @@ export default function TermsConditions() {
             <div className="bg-[#141f3c] rounded-[calc(1rem-1px)]">
               <h2 className="text-2xl font-semibold mb-4 text-[#00d48a]">5. Geographic Restrictions</h2>
               <p className="text-gray-400">
-                ArrowTrade does not provide services to residents of the United States, Iran, North Korea,
+                ArrowBets does not provide services to residents of the United States, Iran, North Korea,
                 Syria, or Myanmar.
               </p>
             </div>
@@ -66,8 +66,8 @@ export default function TermsConditions() {
               <h2 className="text-2xl font-semibold mb-4 text-[#00d48a]">6. Contact</h2>
               <p className="text-gray-400">
                 For questions about these terms, contact us at:{' '}
-                <a href="mailto:legal@arrowtrade.com" className="text-[#00d48a] hover:text-[#00ff9d] transition-colors">
-                  legal@arrowtrade.com
+                <a href="mailto:legal@arrowbets.com" className="text-[#00d48a] hover:text-[#00ff9d] transition-colors">
+                  legal@arrowbets.com
                 </a>
               </p>
             </div>

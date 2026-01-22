@@ -10,7 +10,7 @@ export default function FAQ() {
             Frequently Asked <span className="text-gradient">Questions</span>
           </h1>
           <p className="text-xl text-gray-400">
-            Everything you need to know about trading on ArrowTrade.
+            Everything you need to know about betting on ArrowBets.
           </p>
         </div>
 
@@ -23,7 +23,7 @@ export default function FAQ() {
               Our support team is here to help you 24/7.
             </p>
             <a
-              href="mailto:support@arrowtrade.com"
+              href="mailto:support@arrowbets.com"
               className="text-[#00d48a] hover:text-[#00ff9d] font-medium transition-colors"
             >
               Contact Support →

@@ -7,8 +7,8 @@ import Footer from '@/components/Footer';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'ArrowTrade - Event-Driven Trading Platform',
-  description: 'Trade Everything, Everywhere. Simple & Smart. Event-driven trading with transparent payouts.',
+  title: 'ArrowBets - Event-Driven Betting Platform',
+  description: 'Bet on Everything, Everywhere. Simple & Smart. Event-driven betting with transparent payouts.',
 };
 
 export default function RootLayout({

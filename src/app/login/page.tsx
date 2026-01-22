@@ -8,7 +8,7 @@ export default function Login() {
           <div className="p-8 bg-[#141f3c]">
             <div className="text-center mb-8">
               <h1 className="text-3xl font-bold mb-2 text-white">Welcome Back</h1>
-              <p className="text-gray-400">Sign in to your ArrowTrade account</p>
+              <p className="text-gray-400">Sign in to your ArrowBets account</p>
             </div>
 
             <form className="space-y-6">

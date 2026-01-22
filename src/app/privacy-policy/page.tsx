@@ -60,8 +60,8 @@ export default function PrivacyPolicy() {
               <h2 className="text-2xl font-semibold mb-4 text-[#00d48a]">5. Contact Us</h2>
               <p className="text-gray-400">
                 Questions regarding privacy practices can be directed to:{' '}
-                <a href="mailto:privacy@arrowtrade.com" className="text-[#00d48a] hover:text-[#00ff9d] transition-colors">
-                  privacy@arrowtrade.com
+                <a href="mailto:privacy@arrowbets.com" className="text-[#00d48a] hover:text-[#00ff9d] transition-colors">
+                  privacy@arrowbets.com
                 </a>
               </p>
             </div>

@@ -11,7 +11,7 @@ const steps = [
     icon: Users,
     title: 'Get Matched',
     description:
-      'Your position is matched against traders who predicted the opposite. No algorithms, no house edge—just real traders with real opinions.',
+      'Your position is matched against bettors who predicted the opposite. No algorithms, no house edge—just real bettors with real opinions.',
   },
   {
     icon: CheckCircle,
@@ -23,7 +23,7 @@ const steps = [
     icon: Wallet,
     title: 'Collect Winnings',
     description:
-      'Winners receive payouts funded directly by losing traders\' stakes. Transparent, fair, and immediate.',
+      'Winners receive payouts funded directly by losing bettors\' stakes. Transparent, fair, and immediate.',
   },
 ];
 
@@ -34,10 +34,10 @@ export default function HowItWorks() {
         {/* Hero */}
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">
-            How <span className="text-gradient">ArrowTrade</span> Works
+            How <span className="text-gradient">ArrowBets</span> Works
           </h1>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-            Event-driven trading made simple. Predict outcomes, trade against other
+            Event-driven betting made simple. Predict outcomes, bet against other
             participants, and win when you&apos;re right.
           </p>
         </div>
@@ -84,7 +84,7 @@ export default function HowItWorks() {
           <div className="p-8 bg-[#141f3c]">
             <h2 className="text-2xl font-bold mb-4 text-white">Example: Non-Farm Payrolls</h2>
             <p className="text-gray-400 mb-6">
-              You predict stronger job growth (&quot;Yes&quot;) while another trader predicts weakness
+              You predict stronger job growth (&quot;Yes&quot;) while another bettor predicts weakness
               (&quot;No&quot;). You each stake $100.
             </p>
             <div className="grid md:grid-cols-2 gap-6">
@@ -98,7 +98,7 @@ export default function HowItWorks() {
               <div className="bg-[#00d48a]/10 border border-[#00d48a]/30 rounded-lg p-4">
                 <h3 className="font-semibold text-[#00d48a] mb-2">If Jobs Miss Expectations</h3>
                 <p className="text-gray-400">
-                  The other trader wins. Your $100 stake goes to them (minus fees).
+                  The other bettor wins. Your $100 stake goes to them (minus fees).
                 </p>
               </div>
             </div>
@@ -111,7 +111,7 @@ export default function HowItWorks() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="text-center gradient-border p-6">
               <div className="text-4xl font-bold text-gradient mb-2">$1</div>
-              <p className="text-gray-400">Minimum trade amount</p>
+              <p className="text-gray-400">Minimum bet amount</p>
             </div>
             <div className="text-center gradient-border p-6">
               <div className="text-4xl font-bold text-gradient mb-2">1000%</div>

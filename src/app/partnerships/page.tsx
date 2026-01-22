@@ -5,17 +5,17 @@ const benefits = [
   {
     icon: DollarSign,
     title: '30% Commission',
-    description: 'Earn 30% of the revenue we generate from your referrals\' trading activity.',
+    description: 'Earn 30% of the revenue we generate from your referrals\' betting activity.',
   },
   {
     icon: BarChart3,
     title: 'Real-Time Tracking',
-    description: 'Monitor clicks, signups, active traders, and commissions in your dashboard.',
+    description: 'Monitor clicks, signups, active bettors, and commissions in your dashboard.',
   },
   {
     icon: Gift,
     title: 'No Cap on Earnings',
-    description: 'Unlimited earning potential. The more your referrals trade, the more you earn.',
+    description: 'Unlimited earning potential. The more your referrals bet, the more you earn.',
   },
   {
     icon: Users,
@@ -31,11 +31,11 @@ export default function Partnerships() {
         {/* Hero */}
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">
-            Partner With <span className="text-gradient">ArrowTrade</span>
+            Partner With <span className="text-gradient">ArrowBets</span>
           </h1>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-            Join one of the most rewarding affiliate programs in the trading space.
-            Earn recurring commissions by referring traders.
+            Join one of the most rewarding affiliate programs in the betting space.
+            Earn recurring commissions by referring bettors.
           </p>
         </div>
 
@@ -85,7 +85,7 @@ export default function Partnerships() {
               </div>
               <h3 className="font-semibold mb-2 text-white">Sign Up</h3>
               <p className="text-gray-400">
-                Every ArrowTrade user automatically becomes an affiliate with a unique
+                Every ArrowBets user automatically becomes an affiliate with a unique
                 referral link.
               </p>
             </div>
@@ -104,7 +104,7 @@ export default function Partnerships() {
               </div>
               <h3 className="font-semibold mb-2 text-white">Earn</h3>
               <p className="text-gray-400">
-                Earn 30% commission on revenue from your referrals&apos; trading activity.
+                Earn 30% commission on revenue from your referrals&apos; betting activity.
               </p>
             </div>
           </div>

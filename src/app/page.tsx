@@ -24,12 +24,12 @@ export default function Home() {
         <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Trade Everything, Everywhere<br />
+              Bet on Everything, Everywhere<br />
               <span className="text-gradient">Simple & Smart</span>
             </h1>
             <p className="text-lg text-gray-400 mb-8 max-w-2xl mx-auto">
-              Access global markets with a powerful, intuitive trading platform.
-              Join thousands of traders worldwide.
+              Access global markets with a powerful, intuitive betting platform.
+              Join thousands of bettors worldwide.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
@@ -55,7 +55,7 @@ export default function Home() {
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16">
             <div className="text-center">
               <div className="text-3xl md:text-4xl font-bold text-white">12,000+</div>
-              <div className="text-gray-400 text-sm">Active Traders</div>
+              <div className="text-gray-400 text-sm">Active Bettors</div>
             </div>
             <div className="text-center">
               <div className="text-3xl md:text-4xl font-bold text-white">1,400+</div>
@@ -77,10 +77,10 @@ export default function Home() {
       <section className="py-20 bg-[#0d1421]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-white">
-            Why Trade with <span className="text-gradient">ArrowTrade</span>?
+            Why Bet with <span className="text-gradient">ArrowBets</span>?
           </h2>
           <p className="text-gray-500 text-center mb-12 max-w-2xl mx-auto">
-            A powerful platform built for traders of all levels
+            A powerful platform built for bettors of all levels
           </p>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="gradient-border card-hover p-6">
@@ -91,7 +91,7 @@ export default function Home() {
                 <h3 className="text-xl font-semibold mb-2 text-white">Transparent Pools</h3>
                 <p className="text-gray-500">
                   See real-time pool sizes, trader distribution, and potential returns
-                  before you trade.
+                  before you bet.
                 </p>
               </div>
             </div>
@@ -129,7 +129,7 @@ export default function Home() {
           <div className="flex justify-between items-center mb-10">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-white">Active Pools</h2>
-              <p className="text-gray-500 mt-2">Trade on upcoming economic events</p>
+              <p className="text-gray-500 mt-2">Bet on upcoming economic events</p>
             </div>
             <Link
               href="/register"
@@ -152,10 +152,10 @@ export default function Home() {
         <div className="absolute inset-0 bg-[#0d1421]/80" />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
-            Ready to Start <span className="text-gradient">Trading</span>?
+            Ready to Start <span className="text-gradient">Betting</span>?
           </h2>
           <p className="text-gray-400 mb-8 max-w-xl mx-auto text-lg">
-            Join thousands of traders making predictions on global economic events.
+            Join thousands of bettors making predictions on global economic events.
             Start with as little as $1.
           </p>
           <Link

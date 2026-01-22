@@ -18,7 +18,7 @@ const plans = [
   {
     name: 'Pro',
     price: '$29/mo',
-    description: 'For active traders who want more',
+    description: 'For active bettors who want more',
     features: [
       'Everything in Starter',
       'Up to $1,000 per trade',
@@ -32,7 +32,7 @@ const plans = [
   {
     name: 'Elite',
     price: '$99/mo',
-    description: 'Maximum trading power and features',
+    description: 'Maximum betting power and features',
     features: [
       'Everything in Pro',
       'Unlimited trade size',
@@ -55,7 +55,7 @@ export default function Plans() {
             Choose Your <span className="text-gradient">Plan</span>
           </h1>
           <p className="text-xl text-gray-400">
-            Flexible pricing designed to fit every trader&apos;s style.
+            Flexible pricing designed to fit every bettor&apos;s style.
           </p>
         </div>
 
@@ -99,7 +99,7 @@ export default function Plans() {
         </div>
 
         <div className="mt-12 text-center text-gray-500">
-          <p>All plans include full access to our trading platform. No hidden fees.</p>
+          <p>All plans include full access to our betting platform. No hidden fees.</p>
         </div>
       </div>
     </div>
